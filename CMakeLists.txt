@@ -68,9 +68,9 @@ endif (PNG_FOUND)
 # --------------------------------------------------------------------
 FIND_PACKAGE(OpenGL REQUIRED)
 
-FIND_PACKAGE(GLEW REQUIRED)
-MESSAGE(STATUS "GLEW: incs= ${GLEW_INCLUDE_DIR}, libs= ${GLEW_LIBRARIES}")
-INCLUDE_DIRECTORIES(${GLEW_INCLUDE_DIR})
+# FIND_PACKAGE(GLEW REQUIRED)
+# MESSAGE(STATUS "GLEW: incs= ${GLEW_INCLUDE_DIR}, libs= ${GLEW_LIBRARIES}")
+# INCLUDE_DIRECTORIES(${GLEW_INCLUDE_DIR})
 
 # Search for the OptiX libraries and include files.
 # find_package(OptiX REQUIRED)
