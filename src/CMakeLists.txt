@@ -7,7 +7,6 @@ add_library (sive-util
   Random.cpp Random.h
   SceneDataContainer.h
   Timer.cpp Timer.h
-  Vector3D.cpp Vector3D.h
   XMLSceneParser.h XMLSceneParser.cpp
 )
 
