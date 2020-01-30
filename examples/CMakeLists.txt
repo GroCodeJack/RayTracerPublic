@@ -15,12 +15,6 @@ IF(WIN32)
    target_link_libraries(test_Timer Winmm)
 ENDIF(WIN32)
 
-add_executable(sphereTest
-  sphereTest.cpp
-)
-target_link_libraries(sphereTest sive-util)
-
-
 add_executable(test_pngWrite
   test_pngWrite.cpp
 )
@@ -36,15 +30,4 @@ target_link_libraries(test_readPNGFile sive-util)
 target_link_libraries(test_readPNGFile ${Boost_PROGRAM_OPTIONS_LIBRARIES})
 target_link_libraries(test_readPNGFile ${PNG_LIBRARY})
 target_link_libraries(test_readPNGFile ${ZLIB_LIBRARY})
-
-add_executable(test_XMLSceneParse
-  SceneFile_Instancer.h SceneFile_Instancer.cpp
-  test_XMLSceneParse.cpp
-)
-target_link_libraries(test_XMLSceneParse sive-util)
-target_link_libraries(test_XMLSceneParse ${Boost_PROGRAM_OPTIONS_LIBRARIES})
-target_link_libraries(test_XMLSceneParse ${PNG_LIBRARY})
-target_link_libraries(test_XMLSceneParse ${ZLIB_LIBRARY})
-
-
 

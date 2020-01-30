@@ -27,7 +27,6 @@
 #include "png++/png.hpp"
 #include "handleGraphicsArgs.h"
 #include "Random.h"
-#include "Vector3D.h"
 
 using namespace sivelab;
 
@@ -77,9 +76,9 @@ int main(int argc, char *argv[])
       
       // assert((y >= 0) && (y < h) && x >= 0 && x < w);
 
-      Vector3D c(static_cast<int>(floor(prng.uniform() * 255)), 
-		 static_cast<int>(floor(prng.uniform() * 255)), 
-		 static_cast<int>(floor(prng.uniform() * 255)));
+      int c[3] = {static_cast<int>(floor(prng.uniform() * 255)), 
+                  static_cast<int>(floor(prng.uniform() * 255)), 
+                  static_cast<int>(floor(prng.uniform() * 255)) };
       
       // The origin for indexing the height is in lower left...
       imData[y][x] = png::rgb_pixel( c[0],
@@ -100,9 +99,9 @@ int main(int argc, char *argv[])
       float max_distance = sqrt( static_cast<float>((w/2.0*w/2.0) + (h/2.0*h/2.0)) );
       float dist = sqrt( static_cast<float>((x - w/2.0)*(x - w/2.0) + (y - h/2.0)*(y - h/2.0)) ) / max_distance;
 
-      Vector3D c(static_cast<int>(dist * 255), 
-		 static_cast<int>(dist * 255), 
-		 static_cast<int>(dist * 255));
+      int c[3] = {static_cast<int>(dist * 255), 
+                  static_cast<int>(dist * 255), 
+                  static_cast<int>(dist * 255)};
 
       // The origin for indexing the height is in lower left...
       imData[y][x] = png::rgb_pixel( c[0],
@@ -125,9 +124,9 @@ int main(int argc, char *argv[])
       float max_distance = sqrt( static_cast<float>((w*w) + (h*h)) );
       float dist = sqrt( static_cast<float>((x*x) + (y*y)) ) / max_distance;
 
-      Vector3D c(static_cast<int>(dist * 255), 
-		 static_cast<int>(dist * 255), 
-		 static_cast<int>(dist * 255));
+      int c[3] = {static_cast<int>(dist * 255), 
+                  static_cast<int>(dist * 255), 
+                  static_cast<int>(dist * 255)};
 
       // The origin for indexing the height is in lower left...
       imData[y][x] = png::rgb_pixel( c[0],
@@ -148,7 +147,7 @@ int main(int argc, char *argv[])
 
       // bitwise AND of each value XOR'd with each other
       int v = (((x & 0x8)==0) ^ ((y & 0x8)==0)) * 255;
-      Vector3D c( v, v, v );
+      int c[3] = { v, v, v };
       
       // The origin for indexing the height is in lower left...
       imData[y][x] = png::rgb_pixel( c[0],

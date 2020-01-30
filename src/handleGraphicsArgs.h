@@ -27,7 +27,6 @@
 #include <string>
 
 #include "ArgumentParsing.h"
-#include "Vector3D.h"
 
 namespace sivelab {
 
@@ -47,7 +46,6 @@ namespace sivelab {
     int height;
     float aspectRatio;
     bool useShadow;
-    Vector3D bgColor;
     
     bool useDepthOfField;
     float depthOfFieldDistance;

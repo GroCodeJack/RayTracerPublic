@@ -26,7 +26,7 @@ using namespace sivelab;
 
 GraphicsArgs::GraphicsArgs()
   : verbose(false), width(100), height(100), 
-    aspectRatio(1.0), useShadow(true), bgColor(0.0, 0.0, 0.0),
+    aspectRatio(1.0), useShadow(true),
     useDepthOfField(false),
     depthOfFieldDistance(0),
     numCpus(1), rpp(1), 

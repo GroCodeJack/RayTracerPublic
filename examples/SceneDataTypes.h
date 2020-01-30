@@ -8,7 +8,7 @@ using namespace sivelab;
 //
 struct sceneParamData 
 {
-    Vector3D backgroundColor;
+    float backgroundColor[3];
     bool usesEnvMap;
     std::string envMapPrefix;
 };
@@ -22,8 +22,8 @@ enum CamType {
 };
 struct cameraData {
   CamType type;
-  Vector3D position;
-  Vector3D gazeDirection;
+  float position[3];
+  float gazeDirection[3];
   float focalLength;
   float imagePlaneWidth;
   float aspectRatio;
@@ -39,9 +39,9 @@ enum LightType {
 struct lightData 
 {
     LightType type;
-    Vector3D position;
-    Vector3D intensity;
-    Vector3D normal;
+    float position[3];
+    float intensity[3];
+    float normal[3];
     float width, length;
 };
 
@@ -56,8 +56,8 @@ struct shaderData
 {
     ShaderType type;
     std::string name;
-    Vector3D kd_diffuse;
-    Vector3D ks_specular;
+    float kd_diffuse[3];
+    float ks_specular[3];
     float phongExp;
 };
 
@@ -73,12 +73,12 @@ struct shapeData
     std::string name;
 
     float radius;
-    Vector3D center;
+    float center[3];
 
-    Vector3D minPt;
-    Vector3D maxPt;
+    float minPt[3];
+    float maxPt[3];
 
-    Vector3D v0, v1, v2;
+    float v0[3], v1[3], v2[3];
 
     shaderData shader;
 };
