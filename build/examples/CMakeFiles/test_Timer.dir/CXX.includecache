@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/Random.h
+limits
+-
+windows.h
+-
+boost/random/mersenne_twister.hpp
+-
+boost/random/uniform_01.hpp
+-
+
+../src/Timer.h
+cstdio
+-
+cstdlib
+-
+
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/examples/test_Timer.cpp
+iostream
+-
+cmath
+-
+vector
+-
+Random.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/examples/Random.h
+Timer.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/examples/Timer.h
+

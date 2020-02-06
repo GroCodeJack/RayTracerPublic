@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.o  -o test_FrameBuffer  -L/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build -rdynamic libgraphics.a -lsive-util 

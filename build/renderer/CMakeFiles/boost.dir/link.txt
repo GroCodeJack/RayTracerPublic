@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14   CMakeFiles/boost.dir/test_Framebuffer.cpp.o  -o boost -rdynamic -Wl,-Bstatic -lboost_program_options -lboost_regex -Wl,-Bdynamic 

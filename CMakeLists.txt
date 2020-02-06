@@ -144,7 +144,7 @@ add_subdirectory(examples)
 #
 # Renderer codes
 # 
-# add_subdirectory(renderer)
+add_subdirectory(renderer)
 
 #
 # OpenGL Example

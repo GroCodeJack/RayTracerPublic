@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14   CMakeFiles/utest_Failure.dir/utest_Failure.cpp.o  -o utest_Failure -rdynamic ../src/libsive-util.a -Wl,-Bstatic -lboost_program_options -lboost_unit_test_framework -Wl,-Bdynamic 
