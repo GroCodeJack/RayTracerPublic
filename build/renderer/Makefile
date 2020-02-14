@@ -222,6 +222,60 @@ FrameBuffer.cpp.s:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.s
 .PHONY : FrameBuffer.cpp.s
 
+Rasterizer.o: Rasterizer.cpp.o
+
+.PHONY : Rasterizer.o
+
+# target to build an object file
+Rasterizer.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o
+.PHONY : Rasterizer.cpp.o
+
+Rasterizer.i: Rasterizer.cpp.i
+
+.PHONY : Rasterizer.i
+
+# target to preprocess a source file
+Rasterizer.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.i
+.PHONY : Rasterizer.cpp.i
+
+Rasterizer.s: Rasterizer.cpp.s
+
+.PHONY : Rasterizer.s
+
+# target to generate assembly for a file
+Rasterizer.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.s
+.PHONY : Rasterizer.cpp.s
+
+Triangle.o: Triangle.cpp.o
+
+.PHONY : Triangle.o
+
+# target to build an object file
+Triangle.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Triangle.cpp.o
+.PHONY : Triangle.cpp.o
+
+Triangle.i: Triangle.cpp.i
+
+.PHONY : Triangle.i
+
+# target to preprocess a source file
+Triangle.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Triangle.cpp.i
+.PHONY : Triangle.cpp.i
+
+Triangle.s: Triangle.cpp.s
+
+.PHONY : Triangle.s
+
+# target to generate assembly for a file
+Triangle.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Triangle.cpp.s
+.PHONY : Triangle.cpp.s
+
 Vector3D.o: Vector3D.cpp.o
 
 .PHONY : Vector3D.o
@@ -294,6 +348,12 @@ help:
 	@echo "... FrameBuffer.o"
 	@echo "... FrameBuffer.i"
 	@echo "... FrameBuffer.s"
+	@echo "... Rasterizer.o"
+	@echo "... Rasterizer.i"
+	@echo "... Rasterizer.s"
+	@echo "... Triangle.o"
+	@echo "... Triangle.i"
+	@echo "... Triangle.s"
 	@echo "... Vector3D.o"
 	@echo "... Vector3D.i"
 	@echo "... Vector3D.s"

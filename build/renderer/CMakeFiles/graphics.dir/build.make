@@ -105,19 +105,71 @@ renderer/CMakeFiles/graphics.dir/Vector3D.cpp.o.provides: renderer/CMakeFiles/gr
 renderer/CMakeFiles/graphics.dir/Vector3D.cpp.o.provides.build: renderer/CMakeFiles/graphics.dir/Vector3D.cpp.o
 
 
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: renderer/CMakeFiles/graphics.dir/flags.make
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/Triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object renderer/CMakeFiles/graphics.dir/Triangle.cpp.o"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Triangle.cpp.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp
+
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Triangle.cpp.i"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp > CMakeFiles/graphics.dir/Triangle.cpp.i
+
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Triangle.cpp.s"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp -o CMakeFiles/graphics.dir/Triangle.cpp.s
+
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o.requires:
+
+.PHONY : renderer/CMakeFiles/graphics.dir/Triangle.cpp.o.requires
+
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o.provides: renderer/CMakeFiles/graphics.dir/Triangle.cpp.o.requires
+	$(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Triangle.cpp.o.provides.build
+.PHONY : renderer/CMakeFiles/graphics.dir/Triangle.cpp.o.provides
+
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o.provides.build: renderer/CMakeFiles/graphics.dir/Triangle.cpp.o
+
+
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: renderer/CMakeFiles/graphics.dir/flags.make
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Rasterizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Rasterizer.cpp.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.cpp
+
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Rasterizer.cpp.i"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.cpp > CMakeFiles/graphics.dir/Rasterizer.cpp.i
+
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Rasterizer.cpp.s"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.cpp -o CMakeFiles/graphics.dir/Rasterizer.cpp.s
+
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o.requires:
+
+.PHONY : renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o.requires
+
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o.provides: renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o.requires
+	$(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o.provides.build
+.PHONY : renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o.provides
+
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o.provides.build: renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o
+
+
 # Object files for target graphics
 graphics_OBJECTS = \
 "CMakeFiles/graphics.dir/FrameBuffer.cpp.o" \
-"CMakeFiles/graphics.dir/Vector3D.cpp.o"
+"CMakeFiles/graphics.dir/Vector3D.cpp.o" \
+"CMakeFiles/graphics.dir/Triangle.cpp.o" \
+"CMakeFiles/graphics.dir/Rasterizer.cpp.o"
 
 # External object files for target graphics
 graphics_EXTERNAL_OBJECTS =
 
 renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.o
 renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/Vector3D.cpp.o
+renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/Triangle.cpp.o
+renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o
 renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/build.make
 renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libgraphics.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libgraphics.a"
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && $(CMAKE_COMMAND) -P CMakeFiles/graphics.dir/cmake_clean_target.cmake
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)
 
@@ -128,6 +180,8 @@ renderer/CMakeFiles/graphics.dir/build: renderer/libgraphics.a
 
 renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.o.requires
 renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/Vector3D.cpp.o.requires
+renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/Triangle.cpp.o.requires
+renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o.requires
 
 .PHONY : renderer/CMakeFiles/graphics.dir/requires
 

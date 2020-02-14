@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/graphics.dir/FrameBuffer.cpp.o"
   "CMakeFiles/graphics.dir/Vector3D.cpp.o"
+  "CMakeFiles/graphics.dir/Triangle.cpp.o"
+  "CMakeFiles/graphics.dir/Rasterizer.cpp.o"
   "libgraphics.pdb"
   "libgraphics.a"
 )

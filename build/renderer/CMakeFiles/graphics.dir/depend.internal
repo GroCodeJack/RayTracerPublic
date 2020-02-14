@@ -33,6 +33,17 @@ renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.cpp
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.cpp
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 renderer/CMakeFiles/graphics.dir/Vector3D.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.cpp
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h

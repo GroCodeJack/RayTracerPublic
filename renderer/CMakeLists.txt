@@ -16,6 +16,10 @@ add_library(graphics
   FrameBuffer.cpp
   Vector3D.h
   Vector3D.cpp
+  Triangle.h
+  Triangle.cpp
+  Rasterizer.h
+  Rasterizer.cpp
   )
 
 add_executable(test_FrameBuffer

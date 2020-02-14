@@ -335,10 +335,24 @@ io_base.hpp
 ../src/png++/io_base.hpp
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+string
+-
 Vector3D.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 vector
 -
+
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.h
+Triangle.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
+FrameBuffer.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
+Vector3D.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
+FrameBuffer.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 vector
@@ -367,4 +381,8 @@ handleGraphicsArgs.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/handleGraphicsArgs.h
 FrameBuffer.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+Rasterizer.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.h
+Triangle.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
 

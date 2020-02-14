@@ -33,6 +33,17 @@ renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.o: ../renderer/FrameBuffer.cpp
 renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.o: ../renderer/FrameBuffer.h
 renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.o: ../renderer/Vector3D.h
 
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/FrameBuffer.h
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Rasterizer.cpp
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Rasterizer.h
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Triangle.h
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Vector3D.h
+
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/FrameBuffer.h
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/Triangle.cpp
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/Triangle.h
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/Vector3D.h
+
 renderer/CMakeFiles/graphics.dir/Vector3D.cpp.o: ../renderer/Vector3D.cpp
 renderer/CMakeFiles/graphics.dir/Vector3D.cpp.o: ../renderer/Vector3D.h
 

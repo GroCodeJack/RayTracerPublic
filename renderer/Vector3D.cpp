@@ -60,11 +60,12 @@ float &Vector3D::operator[](const int idx){
   return m_data[idx];
 }
 
-Vector3D &Vector3D::operator=(const Vector3D &rhs){
+Vector3D& Vector3D::operator=(const Vector3D &rhs){
   m_data[0] = rhs[0];
   m_data[1] = rhs[1];
   m_data[2] = rhs[2];
 }
+
 
 const float Vector3D::findLength(){
   float a = this->getAt(0);

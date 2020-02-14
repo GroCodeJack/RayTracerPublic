@@ -1,3 +1,6 @@
+#pragma once
+
+#include <string>
 #include "Vector3D.h"
 #include <vector>
 
@@ -14,7 +17,7 @@ class FrameBuffer {
   }
 
   void exportAsPNG(const std::string &fileName);
-
+  void setBackground(const Vector3D color);
   const int getHeight(){ return m_height; }
   const int getWidth(){ return m_width; }
 

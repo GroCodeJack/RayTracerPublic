@@ -36,4 +36,12 @@ void FrameBuffer::exportAsPNG(const std::string &fileName){
   std::string outputFileName = fileName;
   imData.write( outputFileName );
 }
+
+void FrameBuffer::setBackground(const Vector3D color){
+  for(int i = 0; i < m_width; i++){
+    for(int j = 0; j < m_height; j++){
+      setPixelColor(i, j, color);
+    }
+  }
+}
     

@@ -1,0 +1,31 @@
+#include "Vector3D.h"
+#include "FrameBuffer.h"
+#include "Triangle.h"
+#include <vector>
+
+Triangle::Triangle()
+  : vertices(3)
+{
+  vertices[0] = Vector3D(80.0, 160.0, 0.0);
+  vertices[1] = Vector3D(480.0, 320.0, 0.0);
+  vertices[2] = Vector3D(800.0, 800.0, 0.0);
+}
+
+Triangle::~Triangle(){}
+
+Triangle::Triangle(const Vector3D& a, const Vector3D& b, const Vector3D& c)
+  : vertices(3)
+{
+  vertices[0] = a;
+  vertices[1] = b;
+  vertices[2] = c;
+}
+
+const Vector3D Triangle::operator[](const int idx) const {
+  return vertices[idx];
+}
+
+Vector3D &Triangle::operator[](const int idx){
+  return vertices[idx];
+}
+
