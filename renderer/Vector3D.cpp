@@ -24,6 +24,28 @@ int Vector3D::getSize() const{
   return m_data.size();
 }
 
+const Vector3D cross(const Vector3D &a, const Vector3D &b){
+  float cx = (a[1] * b[2]) - (a[2] * b[1]);
+  float cy = (a[2] * b[0]) - (a[0] * b[2]);
+  float cz = (a[0] * b[1]) - (a[1] * b[0]);
+  Vector3D crossProd(cx, cy, cz);
+  return crossProd;
+  
+
+}
+
+Vector3D& Vector3D::operator/=(const Vector3D &rhs){
+  m_data[0] /= rhs;
+  m_data[1] /= rhs;
+  m_data[2] /= rhs;
+
+  return *this;
+
+}
+  
+
+
+
 const Vector3D operator+(const Vector3D &lhs, const Vector3D &rhs){
     vector< float > sumVect;
     for(int i = 0; i < lhs.getSize(); i++){

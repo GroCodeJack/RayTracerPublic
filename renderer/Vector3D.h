@@ -9,6 +9,7 @@ public:
   Vector3D &operator=(const Vector3D &rhs);   // assignment operator
   Vector3D &operator+=(const Vector3D &rhs);  // plus equal
   Vector3D();
+  Vector3D &operator/=(const Vector3D &rhs);
   Vector3D( float x, float y, float z );
   const float findLength();
  
