@@ -66,7 +66,6 @@ Vector3D& Vector3D::operator=(const Vector3D &rhs){
   m_data[2] = rhs[2];
 }
 
-
 const float Vector3D::findLength(){
   float a = this->getAt(0);
   float b = this->getAt(1);

@@ -55,7 +55,7 @@ void Rasterizer::rasterizeTriangle(Triangle t, FrameBuffer& fb){
       // float alpha = 1 - beta - gamma;
       
       if(alpha > 0 && beta > 0 && gamma > 0){
-	fb.setPixelColor(x, y, Vector3D(0.2, 1.0, 0.25));
+	fb.setPixelColor(x, y, Vector3D(alpha * 1.0, beta * 1.0, gamma * 1.0));
       }
       
     }

@@ -1,0 +1,21 @@
+
+class CoordinateSys {
+ public:
+ CoordinateSys():
+  u(1, 0, 0), v(0, 1, 0), w(0, 0, 1)
+    {
+    }
+  CoordinateSys(Vector3D g){
+    w = -1 * g;
+    float l = w.findLength();
+    w /= l; //takes a float, return &v
+    //
+   
+    
+    //(0, 0, 43)
+
+ private:
+  Vector3D u;
+  Vector3D v;
+  Vector3D w;
+};
