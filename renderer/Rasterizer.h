@@ -8,10 +8,10 @@ class Rasterizer {
  public:
 
   Rasterizer();
-  void rasterizeTriangle(Triangle t, FrameBuffer& fb);
+  // void rasterizeTriangle(Triangle t, FrameBuffer& fb);
 
  private:
   int xmin, xmax, ymin, ymax;
-  void findBoundingBox(Triangle t);
+  // void findBoundingBox(Triangle t);
 
 };

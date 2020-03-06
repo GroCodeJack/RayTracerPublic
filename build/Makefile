@@ -647,6 +647,19 @@ test_FrameBuffer/fast:
 .PHONY : test_FrameBuffer/fast
 
 #=============================================================================
+# Target rules for targets named test_RayTracer
+
+# Build rule for target.
+test_RayTracer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_RayTracer
+.PHONY : test_RayTracer
+
+# fast build rule for target.
+test_RayTracer/fast:
+	$(MAKE) -f renderer/CMakeFiles/test_RayTracer.dir/build.make renderer/CMakeFiles/test_RayTracer.dir/build
+.PHONY : test_RayTracer/fast
+
+#=============================================================================
 # Target rules for targets named utest_Success
 
 # Build rule for target.
@@ -722,6 +735,7 @@ help:
 	@echo "... test_readPNGFile"
 	@echo "... graphics"
 	@echo "... test_FrameBuffer"
+	@echo "... test_RayTracer"
 	@echo "... utest_Success"
 	@echo "... utest_Failure"
 .PHONY : help

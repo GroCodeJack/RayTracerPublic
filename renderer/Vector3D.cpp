@@ -34,7 +34,7 @@ const Vector3D cross(const Vector3D &a, const Vector3D &b){
 
 }
 
-Vector3D& Vector3D::operator/=(const Vector3D &rhs){
+Vector3D& Vector3D::operator/=(const float &rhs){
   m_data[0] /= rhs;
   m_data[1] /= rhs;
   m_data[2] /= rhs;
@@ -43,6 +43,10 @@ Vector3D& Vector3D::operator/=(const Vector3D &rhs){
 
 }
   
+
+const Vector3D operator*(const float &lhs, const Vector3D &rhs){
+  return Vector3D(rhs[0] * lhs, rhs[1] * lhs, rhs[2] * lhs);
+}
 
 
 
@@ -64,6 +68,11 @@ const Vector3D operator-(const Vector3D &lhs, const Vector3D &rhs){
   }
   Vector3D tmp(diffVect.at(0), diffVect.at(1), diffVect.at(2));
   return tmp;
+}
+
+const Vector3D operator*(const Vector3D &lhs, const float &rhs){
+  
+  return Vector3D(lhs[0] * rhs, lhs[1] * rhs, lhs[2] * rhs);
 }
 
 const float operator*(const Vector3D &lhs, const Vector3D &rhs){

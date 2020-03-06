@@ -1,0 +1,32 @@
+#pragma once
+
+#include "Vector3D.h"
+#include "Camera.h"
+#include <vector>
+#include "Ray.h"
+
+class PerspectiveCamera: public Camera {
+ public:
+ PerspectiveCamera():
+  Camera()
+    {
+      m_nX = 100;
+      m_nY = 100;
+      m_ip_w = 0.5;
+      m_focalLength = 1.0;
+      
+    }
+ PerspectiveCamera(int nX, int nY, float fL, float ip_w):
+  Camera(), m_nX(nX), m_nY(nY), m_focalLength(fL), m_ip_w(ip_w)
+  {
+  }
+
+  Ray genRay(int i, int j, int nx, int ny); 
+
+ private:
+  int m_nX;
+  int m_nY;
+  float m_focalLength;
+  float m_ip_w;
+
+};

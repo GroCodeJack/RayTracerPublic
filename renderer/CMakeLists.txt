@@ -20,17 +20,38 @@ add_library(graphics
   Triangle.cpp
   Rasterizer.h
   Rasterizer.cpp
+  Camera.h
+  PerspectiveCamera.h
+  PerspectiveCamera.cpp
+  SceneContainer.h
+  Ray.h
+  RayTracer.h
+  RayTracer.cpp
+  Shape.h
+  CoordinateSys.h
+  CoordinateSys.cpp
   )
 
 add_executable(test_FrameBuffer
   test_Framebuffer.cpp
   )
 
+add_executable(test_RayTracer
+  test_RayTracer.cpp
+  )
+
+
 target_link_libraries(test_FrameBuffer graphics)
 target_link_libraries(test_FrameBuffer sive-util)
 target_link_libraries(test_FrameBuffer ${Boost_PROGRAM_OPTIONS_LIBRARIES})
 target_link_libraries(test_FrameBuffer ${PNG_LIBRARIES})
 target_link_libraries(test_FrameBuffer ${ZLIB_LIBRARIES})
+
+target_link_libraries(test_RayTracer graphics)
+target_link_libraries(test_RayTracer sive-util)
+target_link_libraries(test_RayTracer ${Boost_PROGRAM_OPTIONS_LIBRARIES})
+target_link_libraries(test_RayTracer ${PNG_LIBRARIES})
+target_link_libraries(test_RayTracer ${ZLIB_LIBRARIES})
 
 
 

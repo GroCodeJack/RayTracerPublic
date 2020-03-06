@@ -105,19 +105,149 @@ CMakeFiles/graphics.dir/Vector3D.o.provides: CMakeFiles/graphics.dir/Vector3D.o.
 CMakeFiles/graphics.dir/Vector3D.o.provides.build: CMakeFiles/graphics.dir/Vector3D.o
 
 
+CMakeFiles/graphics.dir/Triangle.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/Triangle.o: ../Triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics.dir/Triangle.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Triangle.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp
+
+CMakeFiles/graphics.dir/Triangle.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Triangle.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp > CMakeFiles/graphics.dir/Triangle.i
+
+CMakeFiles/graphics.dir/Triangle.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Triangle.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp -o CMakeFiles/graphics.dir/Triangle.s
+
+CMakeFiles/graphics.dir/Triangle.o.requires:
+
+.PHONY : CMakeFiles/graphics.dir/Triangle.o.requires
+
+CMakeFiles/graphics.dir/Triangle.o.provides: CMakeFiles/graphics.dir/Triangle.o.requires
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Triangle.o.provides.build
+.PHONY : CMakeFiles/graphics.dir/Triangle.o.provides
+
+CMakeFiles/graphics.dir/Triangle.o.provides.build: CMakeFiles/graphics.dir/Triangle.o
+
+
+CMakeFiles/graphics.dir/Rasterizer.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/Rasterizer.o: ../Rasterizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics.dir/Rasterizer.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Rasterizer.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.cpp
+
+CMakeFiles/graphics.dir/Rasterizer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Rasterizer.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.cpp > CMakeFiles/graphics.dir/Rasterizer.i
+
+CMakeFiles/graphics.dir/Rasterizer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Rasterizer.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.cpp -o CMakeFiles/graphics.dir/Rasterizer.s
+
+CMakeFiles/graphics.dir/Rasterizer.o.requires:
+
+.PHONY : CMakeFiles/graphics.dir/Rasterizer.o.requires
+
+CMakeFiles/graphics.dir/Rasterizer.o.provides: CMakeFiles/graphics.dir/Rasterizer.o.requires
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Rasterizer.o.provides.build
+.PHONY : CMakeFiles/graphics.dir/Rasterizer.o.provides
+
+CMakeFiles/graphics.dir/Rasterizer.o.provides.build: CMakeFiles/graphics.dir/Rasterizer.o
+
+
+CMakeFiles/graphics.dir/PerspectiveCamera.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/PerspectiveCamera.o: ../PerspectiveCamera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics.dir/PerspectiveCamera.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/PerspectiveCamera.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/PerspectiveCamera.cpp
+
+CMakeFiles/graphics.dir/PerspectiveCamera.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/PerspectiveCamera.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/PerspectiveCamera.cpp > CMakeFiles/graphics.dir/PerspectiveCamera.i
+
+CMakeFiles/graphics.dir/PerspectiveCamera.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/PerspectiveCamera.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/PerspectiveCamera.cpp -o CMakeFiles/graphics.dir/PerspectiveCamera.s
+
+CMakeFiles/graphics.dir/PerspectiveCamera.o.requires:
+
+.PHONY : CMakeFiles/graphics.dir/PerspectiveCamera.o.requires
+
+CMakeFiles/graphics.dir/PerspectiveCamera.o.provides: CMakeFiles/graphics.dir/PerspectiveCamera.o.requires
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/PerspectiveCamera.o.provides.build
+.PHONY : CMakeFiles/graphics.dir/PerspectiveCamera.o.provides
+
+CMakeFiles/graphics.dir/PerspectiveCamera.o.provides.build: CMakeFiles/graphics.dir/PerspectiveCamera.o
+
+
+CMakeFiles/graphics.dir/RayTracer.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/RayTracer.o: ../RayTracer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics.dir/RayTracer.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/RayTracer.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/RayTracer.cpp
+
+CMakeFiles/graphics.dir/RayTracer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/RayTracer.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/RayTracer.cpp > CMakeFiles/graphics.dir/RayTracer.i
+
+CMakeFiles/graphics.dir/RayTracer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/RayTracer.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/RayTracer.cpp -o CMakeFiles/graphics.dir/RayTracer.s
+
+CMakeFiles/graphics.dir/RayTracer.o.requires:
+
+.PHONY : CMakeFiles/graphics.dir/RayTracer.o.requires
+
+CMakeFiles/graphics.dir/RayTracer.o.provides: CMakeFiles/graphics.dir/RayTracer.o.requires
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/RayTracer.o.provides.build
+.PHONY : CMakeFiles/graphics.dir/RayTracer.o.provides
+
+CMakeFiles/graphics.dir/RayTracer.o.provides.build: CMakeFiles/graphics.dir/RayTracer.o
+
+
+CMakeFiles/graphics.dir/CoordinateSys.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/CoordinateSys.o: ../CoordinateSys.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/graphics.dir/CoordinateSys.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/CoordinateSys.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/CoordinateSys.cpp
+
+CMakeFiles/graphics.dir/CoordinateSys.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/CoordinateSys.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/CoordinateSys.cpp > CMakeFiles/graphics.dir/CoordinateSys.i
+
+CMakeFiles/graphics.dir/CoordinateSys.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/CoordinateSys.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/CoordinateSys.cpp -o CMakeFiles/graphics.dir/CoordinateSys.s
+
+CMakeFiles/graphics.dir/CoordinateSys.o.requires:
+
+.PHONY : CMakeFiles/graphics.dir/CoordinateSys.o.requires
+
+CMakeFiles/graphics.dir/CoordinateSys.o.provides: CMakeFiles/graphics.dir/CoordinateSys.o.requires
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/CoordinateSys.o.provides.build
+.PHONY : CMakeFiles/graphics.dir/CoordinateSys.o.provides
+
+CMakeFiles/graphics.dir/CoordinateSys.o.provides.build: CMakeFiles/graphics.dir/CoordinateSys.o
+
+
 # Object files for target graphics
 graphics_OBJECTS = \
 "CMakeFiles/graphics.dir/FrameBuffer.o" \
-"CMakeFiles/graphics.dir/Vector3D.o"
+"CMakeFiles/graphics.dir/Vector3D.o" \
+"CMakeFiles/graphics.dir/Triangle.o" \
+"CMakeFiles/graphics.dir/Rasterizer.o" \
+"CMakeFiles/graphics.dir/PerspectiveCamera.o" \
+"CMakeFiles/graphics.dir/RayTracer.o" \
+"CMakeFiles/graphics.dir/CoordinateSys.o"
 
 # External object files for target graphics
 graphics_EXTERNAL_OBJECTS =
 
 libgraphics.a: CMakeFiles/graphics.dir/FrameBuffer.o
 libgraphics.a: CMakeFiles/graphics.dir/Vector3D.o
+libgraphics.a: CMakeFiles/graphics.dir/Triangle.o
+libgraphics.a: CMakeFiles/graphics.dir/Rasterizer.o
+libgraphics.a: CMakeFiles/graphics.dir/PerspectiveCamera.o
+libgraphics.a: CMakeFiles/graphics.dir/RayTracer.o
+libgraphics.a: CMakeFiles/graphics.dir/CoordinateSys.o
 libgraphics.a: CMakeFiles/graphics.dir/build.make
 libgraphics.a: CMakeFiles/graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libgraphics.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libgraphics.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/graphics.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)
 
@@ -128,6 +258,11 @@ CMakeFiles/graphics.dir/build: libgraphics.a
 
 CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/FrameBuffer.o.requires
 CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/Vector3D.o.requires
+CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/Triangle.o.requires
+CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/Rasterizer.o.requires
+CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/PerspectiveCamera.o.requires
+CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/RayTracer.o.requires
+CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/CoordinateSys.o.requires
 
 .PHONY : CMakeFiles/graphics.dir/requires
 

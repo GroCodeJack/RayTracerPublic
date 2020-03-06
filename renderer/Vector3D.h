@@ -9,7 +9,7 @@ public:
   Vector3D &operator=(const Vector3D &rhs);   // assignment operator
   Vector3D &operator+=(const Vector3D &rhs);  // plus equal
   Vector3D();
-  Vector3D &operator/=(const Vector3D &rhs);
+  Vector3D &operator/=(const float &rhs);
   Vector3D( float x, float y, float z );
   const float findLength();
  
@@ -28,3 +28,6 @@ const Vector3D operator+(const Vector3D &lhs, const Vector3D &rhs);
 const Vector3D operator-(const Vector3D &lhs, const Vector3D &rhs);
 const float operator*(const Vector3D &lhs, const Vector3D &rhs);
 const Vector3D cross(const Vector3D &a, const Vector3D &b);
+const Vector3D operator*(const Vector3D &lhs, const float &rhs);
+const Vector3D operator*(const float &lhs, const Vector3D &rhs);
+const Vector3D operator*(const Vector3D &lhs, const float &rhs);

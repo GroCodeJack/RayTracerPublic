@@ -1,17 +1,30 @@
+#pragma once
+
 #include <iostream>
 #include <string>
 #include "Vector3D.h"
 #include <vector>
 #include "CoordinateSys.h"
+#include "Ray.h"
 
 class Camera {
  public:
-  Camera();
   
-  virtual Ray genRay(int i, int j) = 0;
+ Camera():
+  m_position(Vector3D(0, 0, 0)), m_coord()
+    {
+    }
 
- private:
-  std::vector<Vector3D> m_position;
+ Camera(Vector3D p, Vector3D gaze):
+  m_position(p), m_coord(gaze, Vector3D(0, 1, 0))
+    {
+    }
+  
+  
+  virtual Ray genRay(int i, int j, int nx, int ny) = 0;
+
+ protected:
+  Vector3D m_position;
   std::string m_name;
   CoordinateSys m_coord;
 };

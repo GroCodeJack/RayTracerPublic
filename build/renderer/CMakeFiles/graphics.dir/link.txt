@@ -1,2 +1,2 @@
-/usr/bin/ar qc libgraphics.a  CMakeFiles/graphics.dir/FrameBuffer.cpp.o CMakeFiles/graphics.dir/Vector3D.cpp.o CMakeFiles/graphics.dir/Triangle.cpp.o CMakeFiles/graphics.dir/Rasterizer.cpp.o
+/usr/bin/ar qc libgraphics.a  CMakeFiles/graphics.dir/FrameBuffer.cpp.o CMakeFiles/graphics.dir/Vector3D.cpp.o CMakeFiles/graphics.dir/Triangle.cpp.o CMakeFiles/graphics.dir/Rasterizer.cpp.o CMakeFiles/graphics.dir/PerspectiveCamera.cpp.o CMakeFiles/graphics.dir/RayTracer.cpp.o CMakeFiles/graphics.dir/CoordinateSys.cpp.o
 /usr/bin/ranlib libgraphics.a

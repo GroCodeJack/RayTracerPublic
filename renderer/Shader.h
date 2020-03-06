@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include "Vector3D.h"
 #include <string>

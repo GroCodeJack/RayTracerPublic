@@ -38,6 +38,6 @@ CoordinateSys::CoordinateSys(Vector3D g, Vector3D ud){
   txw = cross(ud, w);
   txw /= txw.findLength();
   u = txw;
-  v = cross(u, w):
+  v = cross(u, w);
 
 }

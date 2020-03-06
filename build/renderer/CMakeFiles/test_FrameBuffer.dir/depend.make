@@ -33,6 +33,8 @@ renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o: ../src/png++/ty
 renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o: ../src/png++/writer.hpp
 renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o: ../renderer/FrameBuffer.h
 renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o: ../renderer/Rasterizer.h
+renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o: ../renderer/Ray.h
+renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o: ../renderer/Shape.h
 renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o: ../renderer/Triangle.h
 renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o: ../renderer/Vector3D.h
 renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o: ../renderer/test_Framebuffer.cpp

@@ -11,9 +11,9 @@ class CoordinateSys {
   CoordinateSys(Vector3D g);
   CoordinateSys(Vector3D g, Vector3D ud);
  
-  Vector3D getU(){ return u };
-  Vector3D getV(){ return v };
-  Vector3D getW(){ return w };
+  Vector3D getU(){ return u; };
+  Vector3D getV(){ return v; };
+  Vector3D getW(){ return w; };
  
  private:
   Vector3D u;

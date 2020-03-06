@@ -12,6 +12,7 @@ using namespace std;
 Rasterizer::Rasterizer(){
 }
 
+/*
 void Rasterizer::findBoundingBox(Triangle t){
   xmin = std::floor(std::min({t[0][0], t[1][0], t[2][0]}));
   xmax = std::ceil(std::max({t[0][0], t[1][0], t[2][0]}));
@@ -61,4 +62,6 @@ void Rasterizer::rasterizeTriangle(Triangle t, FrameBuffer& fb){
     }
   }
 }
+
+*/
 			 

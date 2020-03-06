@@ -1,4 +1,6 @@
-#include <Vector3D>
+#pragma once
+
+#include "Vector3D.h"
 #include <string>
 #include <iostream>
 

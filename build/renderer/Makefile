@@ -100,16 +100,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : test/fast
+.PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -122,16 +122,16 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target install/local
-install/local/fast: install/local
+# Special rule for the target test
+test/fast: test
 
-.PHONY : install/local/fast
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -195,6 +195,48 @@ test_FrameBuffer/fast:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_FrameBuffer.dir/build.make renderer/CMakeFiles/test_FrameBuffer.dir/build
 .PHONY : test_FrameBuffer/fast
 
+# Convenience name for target.
+renderer/CMakeFiles/test_RayTracer.dir/rule:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f CMakeFiles/Makefile2 renderer/CMakeFiles/test_RayTracer.dir/rule
+.PHONY : renderer/CMakeFiles/test_RayTracer.dir/rule
+
+# Convenience name for target.
+test_RayTracer: renderer/CMakeFiles/test_RayTracer.dir/rule
+
+.PHONY : test_RayTracer
+
+# fast build rule for target.
+test_RayTracer/fast:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_RayTracer.dir/build.make renderer/CMakeFiles/test_RayTracer.dir/build
+.PHONY : test_RayTracer/fast
+
+CoordinateSys.o: CoordinateSys.cpp.o
+
+.PHONY : CoordinateSys.o
+
+# target to build an object file
+CoordinateSys.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.o
+.PHONY : CoordinateSys.cpp.o
+
+CoordinateSys.i: CoordinateSys.cpp.i
+
+.PHONY : CoordinateSys.i
+
+# target to preprocess a source file
+CoordinateSys.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.i
+.PHONY : CoordinateSys.cpp.i
+
+CoordinateSys.s: CoordinateSys.cpp.s
+
+.PHONY : CoordinateSys.s
+
+# target to generate assembly for a file
+CoordinateSys.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.s
+.PHONY : CoordinateSys.cpp.s
+
 FrameBuffer.o: FrameBuffer.cpp.o
 
 .PHONY : FrameBuffer.o
@@ -222,6 +264,33 @@ FrameBuffer.cpp.s:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.s
 .PHONY : FrameBuffer.cpp.s
 
+PerspectiveCamera.o: PerspectiveCamera.cpp.o
+
+.PHONY : PerspectiveCamera.o
+
+# target to build an object file
+PerspectiveCamera.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/PerspectiveCamera.cpp.o
+.PHONY : PerspectiveCamera.cpp.o
+
+PerspectiveCamera.i: PerspectiveCamera.cpp.i
+
+.PHONY : PerspectiveCamera.i
+
+# target to preprocess a source file
+PerspectiveCamera.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/PerspectiveCamera.cpp.i
+.PHONY : PerspectiveCamera.cpp.i
+
+PerspectiveCamera.s: PerspectiveCamera.cpp.s
+
+.PHONY : PerspectiveCamera.s
+
+# target to generate assembly for a file
+PerspectiveCamera.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/PerspectiveCamera.cpp.s
+.PHONY : PerspectiveCamera.cpp.s
+
 Rasterizer.o: Rasterizer.cpp.o
 
 .PHONY : Rasterizer.o
@@ -248,6 +317,33 @@ Rasterizer.s: Rasterizer.cpp.s
 Rasterizer.cpp.s:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.s
 .PHONY : Rasterizer.cpp.s
+
+RayTracer.o: RayTracer.cpp.o
+
+.PHONY : RayTracer.o
+
+# target to build an object file
+RayTracer.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o
+.PHONY : RayTracer.cpp.o
+
+RayTracer.i: RayTracer.cpp.i
+
+.PHONY : RayTracer.i
+
+# target to preprocess a source file
+RayTracer.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/RayTracer.cpp.i
+.PHONY : RayTracer.cpp.i
+
+RayTracer.s: RayTracer.cpp.s
+
+.PHONY : RayTracer.s
+
+# target to generate assembly for a file
+RayTracer.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/RayTracer.cpp.s
+.PHONY : RayTracer.cpp.s
 
 Triangle.o: Triangle.cpp.o
 
@@ -330,6 +426,33 @@ test_Framebuffer.cpp.s:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_FrameBuffer.dir/build.make renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.s
 .PHONY : test_Framebuffer.cpp.s
 
+test_RayTracer.o: test_RayTracer.cpp.o
+
+.PHONY : test_RayTracer.o
+
+# target to build an object file
+test_RayTracer.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_RayTracer.dir/build.make renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o
+.PHONY : test_RayTracer.cpp.o
+
+test_RayTracer.i: test_RayTracer.cpp.i
+
+.PHONY : test_RayTracer.i
+
+# target to preprocess a source file
+test_RayTracer.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_RayTracer.dir/build.make renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.i
+.PHONY : test_RayTracer.cpp.i
+
+test_RayTracer.s: test_RayTracer.cpp.s
+
+.PHONY : test_RayTracer.s
+
+# target to generate assembly for a file
+test_RayTracer.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_RayTracer.dir/build.make renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.s
+.PHONY : test_RayTracer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -340,17 +463,27 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... graphics"
-	@echo "... test_FrameBuffer"
-	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... test_FrameBuffer"
+	@echo "... test"
+	@echo "... test_RayTracer"
+	@echo "... CoordinateSys.o"
+	@echo "... CoordinateSys.i"
+	@echo "... CoordinateSys.s"
 	@echo "... FrameBuffer.o"
 	@echo "... FrameBuffer.i"
 	@echo "... FrameBuffer.s"
+	@echo "... PerspectiveCamera.o"
+	@echo "... PerspectiveCamera.i"
+	@echo "... PerspectiveCamera.s"
 	@echo "... Rasterizer.o"
 	@echo "... Rasterizer.i"
 	@echo "... Rasterizer.s"
+	@echo "... RayTracer.o"
+	@echo "... RayTracer.i"
+	@echo "... RayTracer.s"
 	@echo "... Triangle.o"
 	@echo "... Triangle.i"
 	@echo "... Triangle.s"
@@ -360,6 +493,9 @@ help:
 	@echo "... test_Framebuffer.o"
 	@echo "... test_Framebuffer.i"
 	@echo "... test_Framebuffer.s"
+	@echo "... test_RayTracer.o"
+	@echo "... test_RayTracer.i"
+	@echo "... test_RayTracer.s"
 .PHONY : help
 
 

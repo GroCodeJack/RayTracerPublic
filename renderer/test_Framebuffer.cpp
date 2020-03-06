@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
   Triangle t(Vector3D(200.0, 40.0, 0.0), Vector3D(250.0, 80.0, 0.0), Vector3D(225.0, 200.0, 0.0));
   
   Rasterizer r;
-  r.rasterizeTriangle(t, fb);
+  //r.rasterizeTriangle(t, fb);
 
   //
   // "Render" the scene - normally you might call your different

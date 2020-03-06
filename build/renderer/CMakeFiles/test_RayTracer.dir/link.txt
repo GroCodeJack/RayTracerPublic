@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14   CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o  -o test_RayTracer -rdynamic libgraphics.a ../src/libsive-util.a -Wl,-Bstatic -lboost_program_options -Wl,-Bdynamic -lpng -lz -lz 

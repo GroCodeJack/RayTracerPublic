@@ -34,6 +34,8 @@ renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o
  ../src/png++/writer.hpp
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shape.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/test_Framebuffer.cpp

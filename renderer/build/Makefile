@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named graphics
+
+# Build rule for target.
+graphics: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 graphics
+.PHONY : graphics
+
+# fast build rule for target.
+graphics/fast:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/build
+.PHONY : graphics/fast
+
+#=============================================================================
 # Target rules for targets named test_FrameBuffer
 
 # Build rule for target.
@@ -124,17 +137,32 @@ test_FrameBuffer/fast:
 .PHONY : test_FrameBuffer/fast
 
 #=============================================================================
-# Target rules for targets named graphics
+# Target rules for targets named test_RayTracer
 
 # Build rule for target.
-graphics: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 graphics
-.PHONY : graphics
+test_RayTracer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_RayTracer
+.PHONY : test_RayTracer
 
 # fast build rule for target.
-graphics/fast:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/build
-.PHONY : graphics/fast
+test_RayTracer/fast:
+	$(MAKE) -f CMakeFiles/test_RayTracer.dir/build.make CMakeFiles/test_RayTracer.dir/build
+.PHONY : test_RayTracer/fast
+
+# target to build an object file
+CoordinateSys.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/CoordinateSys.o
+.PHONY : CoordinateSys.o
+
+# target to preprocess a source file
+CoordinateSys.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/CoordinateSys.i
+.PHONY : CoordinateSys.i
+
+# target to generate assembly for a file
+CoordinateSys.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/CoordinateSys.s
+.PHONY : CoordinateSys.s
 
 # target to build an object file
 FrameBuffer.o:
@@ -150,6 +178,66 @@ FrameBuffer.i:
 FrameBuffer.s:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/FrameBuffer.s
 .PHONY : FrameBuffer.s
+
+# target to build an object file
+PerspectiveCamera.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/PerspectiveCamera.o
+.PHONY : PerspectiveCamera.o
+
+# target to preprocess a source file
+PerspectiveCamera.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/PerspectiveCamera.i
+.PHONY : PerspectiveCamera.i
+
+# target to generate assembly for a file
+PerspectiveCamera.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/PerspectiveCamera.s
+.PHONY : PerspectiveCamera.s
+
+# target to build an object file
+Rasterizer.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Rasterizer.o
+.PHONY : Rasterizer.o
+
+# target to preprocess a source file
+Rasterizer.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Rasterizer.i
+.PHONY : Rasterizer.i
+
+# target to generate assembly for a file
+Rasterizer.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Rasterizer.s
+.PHONY : Rasterizer.s
+
+# target to build an object file
+RayTracer.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/RayTracer.o
+.PHONY : RayTracer.o
+
+# target to preprocess a source file
+RayTracer.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/RayTracer.i
+.PHONY : RayTracer.i
+
+# target to generate assembly for a file
+RayTracer.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/RayTracer.s
+.PHONY : RayTracer.s
+
+# target to build an object file
+Triangle.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Triangle.o
+.PHONY : Triangle.o
+
+# target to preprocess a source file
+Triangle.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Triangle.i
+.PHONY : Triangle.i
+
+# target to generate assembly for a file
+Triangle.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Triangle.s
+.PHONY : Triangle.s
 
 # target to build an object file
 Vector3D.o:
@@ -181,6 +269,21 @@ test_Framebuffer.s:
 	$(MAKE) -f CMakeFiles/test_FrameBuffer.dir/build.make CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.s
 .PHONY : test_Framebuffer.s
 
+# target to build an object file
+test_RayTracer.o:
+	$(MAKE) -f CMakeFiles/test_RayTracer.dir/build.make CMakeFiles/test_RayTracer.dir/test_RayTracer.o
+.PHONY : test_RayTracer.o
+
+# target to preprocess a source file
+test_RayTracer.i:
+	$(MAKE) -f CMakeFiles/test_RayTracer.dir/build.make CMakeFiles/test_RayTracer.dir/test_RayTracer.i
+.PHONY : test_RayTracer.i
+
+# target to generate assembly for a file
+test_RayTracer.s:
+	$(MAKE) -f CMakeFiles/test_RayTracer.dir/build.make CMakeFiles/test_RayTracer.dir/test_RayTracer.s
+.PHONY : test_RayTracer.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -188,18 +291,37 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... test_FrameBuffer"
 	@echo "... graphics"
+	@echo "... test_FrameBuffer"
+	@echo "... rebuild_cache"
+	@echo "... test_RayTracer"
+	@echo "... CoordinateSys.o"
+	@echo "... CoordinateSys.i"
+	@echo "... CoordinateSys.s"
 	@echo "... FrameBuffer.o"
 	@echo "... FrameBuffer.i"
 	@echo "... FrameBuffer.s"
+	@echo "... PerspectiveCamera.o"
+	@echo "... PerspectiveCamera.i"
+	@echo "... PerspectiveCamera.s"
+	@echo "... Rasterizer.o"
+	@echo "... Rasterizer.i"
+	@echo "... Rasterizer.s"
+	@echo "... RayTracer.o"
+	@echo "... RayTracer.i"
+	@echo "... RayTracer.s"
+	@echo "... Triangle.o"
+	@echo "... Triangle.i"
+	@echo "... Triangle.s"
 	@echo "... Vector3D.o"
 	@echo "... Vector3D.i"
 	@echo "... Vector3D.s"
 	@echo "... test_Framebuffer.o"
 	@echo "... test_Framebuffer.i"
 	@echo "... test_Framebuffer.s"
+	@echo "... test_RayTracer.o"
+	@echo "... test_RayTracer.i"
+	@echo "... test_RayTracer.s"
 .PHONY : help
 
 
