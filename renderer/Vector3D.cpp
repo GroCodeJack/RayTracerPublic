@@ -24,6 +24,19 @@ int Vector3D::getSize() const{
   return m_data.size();
 }
 
+Vector3D& Vector3D::operator=(const std::string &rhs){
+  std::stringstream ss;
+  ss.str(rhs);
+  ss >> m_data[0] >> m_data[1] >> m_data[2];
+  return *this;
+}
+
+ostringstream Vector3D::operator<<(const Vector3D &rhs){
+  ostringstream ss;
+  ss << m_data[0] << m_data[1] << m_data[2];
+  return ss;
+}
+
 const Vector3D cross(const Vector3D &a, const Vector3D &b){
   float cx = (a[1] * b[2]) - (a[2] * b[1]);
   float cy = (a[2] * b[0]) - (a[0] * b[2]);

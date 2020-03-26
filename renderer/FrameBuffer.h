@@ -17,13 +17,18 @@ class FrameBuffer {
   }
 
   void exportAsPNG(const std::string &fileName);
-  void setBackground(const Vector3D color);
+  void setBackground(float r, float g, float b);
+  Vector3D getBackground();
+  void setBackground(const Vector3D& bgcolor){
+    m_bgcolor = bgcolor;
+  }
   const int getHeight(){ return m_height; }
   const int getWidth(){ return m_width; }
 
  private:
   int m_height;
   int m_width;
+  Vector3D m_bgcolor;
   std::vector< Vector3D > imageData;
 
 };

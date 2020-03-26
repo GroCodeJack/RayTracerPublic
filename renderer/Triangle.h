@@ -8,10 +8,13 @@ class Triangle : public Shape {
  public:
   Triangle();
   ~Triangle();
+  Triangle(const Vector3D& a, const Vector3D& b, const Vector3D& c, const Vector3D &color);
   Triangle(const Vector3D& a, const Vector3D& b, const Vector3D& c);
   const Vector3D operator[](const int idx) const;
   Vector3D &operator[](const int idx);
-  bool closestHit(const Ray &r) const;
+  void setColor(float x, float y, float z);
+  Vector3D getColor();
+  bool closestHit(const Ray &r, float tmin, float &tmax) const;
   
 
 

@@ -7,25 +7,30 @@
 
 using namespace std;
 
-void RayTracer::render(const Shape* shPtr){
-  //chapter 4 section 2-3
+void RayTracer::render(){
+
   for(int i = 0; i < m_fb.getHeight(); i++){
     for(int j = 0; j < m_fb.getWidth(); j++){
+      bool hitObj = false;
+      
       Ray r = m_sc.getCamera(0)->genRay(i, j, m_fb.getHeight(), m_fb.getWidth());
-      //cout << m_sc.getCamera(0)->getFL() << endl;
-      //cout << r.getDirection()[0] << endl;
-      //cout << r.getDirection()[1] << endl;
-      //cout << r.getDirection()[2] << endl;
-      if(shPtr->closestHit(r)){
-	if(i % 4 == 0 && j % 4 == 0){
-	  cout << "hit" << endl; }
-	m_fb.setPixelColor(i, j, Vector3D(1.0, 0.0, 0.0));
+      float tmin = 1.0;
+      float tmax = 10000.0;
+      for(int k = 0; k < m_sc.getAllShapes().size(); k++){
+	//cout << "Obj processed" << endl;
+	if(m_sc.getShape(k)->closestHit(r, tmin, tmax)){
+	  m_fb.setPixelColor(i, j, m_sc.getShape(k)->getColor());
+	  //cout << "HIT!" << endl;
+
+	  hitObj = true;
+	}
       }
-      else {
-	if(i % 4 == 0 && j % 4 == 0){
-	  cout << "no hit" << endl; }
-	m_fb.setPixelColor(i, j, Vector3D(0.0, 0.0, 1.0));
+      if(!hitObj){
+	m_fb.setPixelColor(i, j, m_fb.getBackground());
       }
+      
     }
+    std::cout << i << std::endl;
   }
 }
+

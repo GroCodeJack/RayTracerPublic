@@ -19,7 +19,7 @@ class RayTracer {
   {
   }
   
-  void render( const Shape* shPtr);
+  void render();
 
   FrameBuffer getFB(){
     return m_fb;

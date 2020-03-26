@@ -7,13 +7,13 @@
 
 
 FrameBuffer::FrameBuffer()
-  : m_width(100), m_height(100), imageData(m_height * m_width, Vector3D(0.0f, 0.0f, 0.0f))
+  : m_width(100), m_height(100), m_bgcolor(0.0, 0.0, 0.0), imageData(m_height * m_width, Vector3D(0.0f, 0.0f, 0.0f))
 {
   
 }
 
 FrameBuffer::FrameBuffer(int width, int height)
-  : m_width(width), m_height(height), imageData(height * width)
+  : m_width(width), m_height(height), m_bgcolor(0.0, 0.0, 0.0), imageData(height * width)
 {
   
 }
@@ -37,11 +37,21 @@ void FrameBuffer::exportAsPNG(const std::string &fileName){
   imData.write( outputFileName );
 }
 
-void FrameBuffer::setBackground(const Vector3D color){
+void FrameBuffer::setBackground(float r, float g, float b){
+  /*
   for(int i = 0; i < m_width; i++){
     for(int j = 0; j < m_height; j++){
       setPixelColor(i, j, color);
     }
   }
+  */
+
+  Vector3D color(r, g, b);
+  m_bgcolor = color;
+
+}
+
+Vector3D FrameBuffer::getBackground(){
+  return m_bgcolor;
 }
     

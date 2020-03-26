@@ -100,16 +100,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target install/local
-install/local/fast: install/local
+# Special rule for the target test
+test/fast: test
 
-.PHONY : install/local/fast
+.PHONY : test/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -122,16 +122,16 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : test/fast
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -181,21 +181,6 @@ graphics/fast:
 .PHONY : graphics/fast
 
 # Convenience name for target.
-renderer/CMakeFiles/test_FrameBuffer.dir/rule:
-	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f CMakeFiles/Makefile2 renderer/CMakeFiles/test_FrameBuffer.dir/rule
-.PHONY : renderer/CMakeFiles/test_FrameBuffer.dir/rule
-
-# Convenience name for target.
-test_FrameBuffer: renderer/CMakeFiles/test_FrameBuffer.dir/rule
-
-.PHONY : test_FrameBuffer
-
-# fast build rule for target.
-test_FrameBuffer/fast:
-	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_FrameBuffer.dir/build.make renderer/CMakeFiles/test_FrameBuffer.dir/build
-.PHONY : test_FrameBuffer/fast
-
-# Convenience name for target.
 renderer/CMakeFiles/test_RayTracer.dir/rule:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f CMakeFiles/Makefile2 renderer/CMakeFiles/test_RayTracer.dir/rule
 .PHONY : renderer/CMakeFiles/test_RayTracer.dir/rule
@@ -209,6 +194,33 @@ test_RayTracer: renderer/CMakeFiles/test_RayTracer.dir/rule
 test_RayTracer/fast:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_RayTracer.dir/build.make renderer/CMakeFiles/test_RayTracer.dir/build
 .PHONY : test_RayTracer/fast
+
+Circle.o: Circle.cpp.o
+
+.PHONY : Circle.o
+
+# target to build an object file
+Circle.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Circle.cpp.o
+.PHONY : Circle.cpp.o
+
+Circle.i: Circle.cpp.i
+
+.PHONY : Circle.i
+
+# target to preprocess a source file
+Circle.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Circle.cpp.i
+.PHONY : Circle.cpp.i
+
+Circle.s: Circle.cpp.s
+
+.PHONY : Circle.s
+
+# target to generate assembly for a file
+Circle.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Circle.cpp.s
+.PHONY : Circle.cpp.s
 
 CoordinateSys.o: CoordinateSys.cpp.o
 
@@ -345,6 +357,33 @@ RayTracer.cpp.s:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/RayTracer.cpp.s
 .PHONY : RayTracer.cpp.s
 
+Scene_jsonParser.o: Scene_jsonParser.cpp.o
+
+.PHONY : Scene_jsonParser.o
+
+# target to build an object file
+Scene_jsonParser.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o
+.PHONY : Scene_jsonParser.cpp.o
+
+Scene_jsonParser.i: Scene_jsonParser.cpp.i
+
+.PHONY : Scene_jsonParser.i
+
+# target to preprocess a source file
+Scene_jsonParser.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.i
+.PHONY : Scene_jsonParser.cpp.i
+
+Scene_jsonParser.s: Scene_jsonParser.cpp.s
+
+.PHONY : Scene_jsonParser.s
+
+# target to generate assembly for a file
+Scene_jsonParser.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.s
+.PHONY : Scene_jsonParser.cpp.s
+
 Triangle.o: Triangle.cpp.o
 
 .PHONY : Triangle.o
@@ -399,33 +438,6 @@ Vector3D.cpp.s:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Vector3D.cpp.s
 .PHONY : Vector3D.cpp.s
 
-test_Framebuffer.o: test_Framebuffer.cpp.o
-
-.PHONY : test_Framebuffer.o
-
-# target to build an object file
-test_Framebuffer.cpp.o:
-	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_FrameBuffer.dir/build.make renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.o
-.PHONY : test_Framebuffer.cpp.o
-
-test_Framebuffer.i: test_Framebuffer.cpp.i
-
-.PHONY : test_Framebuffer.i
-
-# target to preprocess a source file
-test_Framebuffer.cpp.i:
-	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_FrameBuffer.dir/build.make renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.i
-.PHONY : test_Framebuffer.cpp.i
-
-test_Framebuffer.s: test_Framebuffer.cpp.s
-
-.PHONY : test_Framebuffer.s
-
-# target to generate assembly for a file
-test_Framebuffer.cpp.s:
-	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_FrameBuffer.dir/build.make renderer/CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.cpp.s
-.PHONY : test_Framebuffer.cpp.s
-
 test_RayTracer.o: test_RayTracer.cpp.o
 
 .PHONY : test_RayTracer.o
@@ -464,11 +476,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... graphics"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... test_FrameBuffer"
 	@echo "... test"
 	@echo "... test_RayTracer"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... Circle.o"
+	@echo "... Circle.i"
+	@echo "... Circle.s"
 	@echo "... CoordinateSys.o"
 	@echo "... CoordinateSys.i"
 	@echo "... CoordinateSys.s"
@@ -484,15 +498,15 @@ help:
 	@echo "... RayTracer.o"
 	@echo "... RayTracer.i"
 	@echo "... RayTracer.s"
+	@echo "... Scene_jsonParser.o"
+	@echo "... Scene_jsonParser.i"
+	@echo "... Scene_jsonParser.s"
 	@echo "... Triangle.o"
 	@echo "... Triangle.i"
 	@echo "... Triangle.s"
 	@echo "... Vector3D.o"
 	@echo "... Vector3D.i"
 	@echo "... Vector3D.s"
-	@echo "... test_Framebuffer.o"
-	@echo "... test_Framebuffer.i"
-	@echo "... test_Framebuffer.s"
 	@echo "... test_RayTracer.o"
 	@echo "... test_RayTracer.i"
 	@echo "... test_RayTracer.s"

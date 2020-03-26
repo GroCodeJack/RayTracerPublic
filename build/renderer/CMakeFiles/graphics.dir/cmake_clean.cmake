@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphics.dir/PerspectiveCamera.cpp.o"
   "CMakeFiles/graphics.dir/RayTracer.cpp.o"
   "CMakeFiles/graphics.dir/CoordinateSys.cpp.o"
+  "CMakeFiles/graphics.dir/Circle.cpp.o"
+  "CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o"
   "libgraphics.pdb"
   "libgraphics.a"
 )

@@ -1,0 +1,22 @@
+#pragma once
+
+#include <iostream>
+#include "Shader.h"
+#include "LambertianShader.h"
+#include "Shape.h"
+#include "Vector3D.h"
+#include "stdio.h"
+
+class SolidColor : public Shader {
+ public:
+  SolidColor(){
+    c[0] = drand(48);
+    c[1] = drand(48);
+    c[2] = drand(48);
+  }
+
+  Vector3D computeShading{ return c; };
+
+ private:
+  Vector3D c;
+};

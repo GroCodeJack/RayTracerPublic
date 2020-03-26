@@ -1,0 +1,20 @@
+#pragma once
+
+#include <iostream>
+#include "Vector3D.h"
+#include <string>
+#include "Shape.h"
+#include "Shader.h"
+#include <vector>
+
+class LambertianShader : public Shader {
+ public:
+  LambertianShader();
+
+  Vector3D apply();
+  Vector3D computeShading();
+  Vector3D computeShading(Vector3D n);
+
+ private:
+  Vector3D m_c;
+};

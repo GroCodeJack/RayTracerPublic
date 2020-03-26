@@ -225,6 +225,54 @@ renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.o.provides: renderer/CMakeFil
 renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.o.provides.build: renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.o
 
 
+renderer/CMakeFiles/graphics.dir/Circle.cpp.o: renderer/CMakeFiles/graphics.dir/flags.make
+renderer/CMakeFiles/graphics.dir/Circle.cpp.o: ../renderer/Circle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object renderer/CMakeFiles/graphics.dir/Circle.cpp.o"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Circle.cpp.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.cpp
+
+renderer/CMakeFiles/graphics.dir/Circle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Circle.cpp.i"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.cpp > CMakeFiles/graphics.dir/Circle.cpp.i
+
+renderer/CMakeFiles/graphics.dir/Circle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Circle.cpp.s"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.cpp -o CMakeFiles/graphics.dir/Circle.cpp.s
+
+renderer/CMakeFiles/graphics.dir/Circle.cpp.o.requires:
+
+.PHONY : renderer/CMakeFiles/graphics.dir/Circle.cpp.o.requires
+
+renderer/CMakeFiles/graphics.dir/Circle.cpp.o.provides: renderer/CMakeFiles/graphics.dir/Circle.cpp.o.requires
+	$(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Circle.cpp.o.provides.build
+.PHONY : renderer/CMakeFiles/graphics.dir/Circle.cpp.o.provides
+
+renderer/CMakeFiles/graphics.dir/Circle.cpp.o.provides.build: renderer/CMakeFiles/graphics.dir/Circle.cpp.o
+
+
+renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: renderer/CMakeFiles/graphics.dir/flags.make
+renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/Scene_jsonParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Scene_jsonParser.cpp
+
+renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Scene_jsonParser.cpp.i"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Scene_jsonParser.cpp > CMakeFiles/graphics.dir/Scene_jsonParser.cpp.i
+
+renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Scene_jsonParser.cpp.s"
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Scene_jsonParser.cpp -o CMakeFiles/graphics.dir/Scene_jsonParser.cpp.s
+
+renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o.requires:
+
+.PHONY : renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o.requires
+
+renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o.provides: renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o.requires
+	$(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o.provides.build
+.PHONY : renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o.provides
+
+renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o.provides.build: renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o
+
+
 # Object files for target graphics
 graphics_OBJECTS = \
 "CMakeFiles/graphics.dir/FrameBuffer.cpp.o" \
@@ -233,7 +281,9 @@ graphics_OBJECTS = \
 "CMakeFiles/graphics.dir/Rasterizer.cpp.o" \
 "CMakeFiles/graphics.dir/PerspectiveCamera.cpp.o" \
 "CMakeFiles/graphics.dir/RayTracer.cpp.o" \
-"CMakeFiles/graphics.dir/CoordinateSys.cpp.o"
+"CMakeFiles/graphics.dir/CoordinateSys.cpp.o" \
+"CMakeFiles/graphics.dir/Circle.cpp.o" \
+"CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o"
 
 # External object files for target graphics
 graphics_EXTERNAL_OBJECTS =
@@ -245,9 +295,11 @@ renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o
 renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/PerspectiveCamera.cpp.o
 renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o
 renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.o
+renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/Circle.cpp.o
+renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o
 renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/build.make
 renderer/libgraphics.a: renderer/CMakeFiles/graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libgraphics.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libgraphics.a"
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && $(CMAKE_COMMAND) -P CMakeFiles/graphics.dir/cmake_clean_target.cmake
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)
 
@@ -263,6 +315,8 @@ renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/Rast
 renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/PerspectiveCamera.cpp.o.requires
 renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o.requires
 renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.o.requires
+renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/Circle.cpp.o.requires
+renderer/CMakeFiles/graphics.dir/requires: renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o.requires
 
 .PHONY : renderer/CMakeFiles/graphics.dir/requires
 

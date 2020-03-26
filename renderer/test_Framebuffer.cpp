@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
   // Create a Framebuffer to hold the 2D data for our scene
   FrameBuffer fb(args.width, args.height);
   Vector3D color(1.0, 0.25, 1.0);
-  fb.setBackground(color);
+  // fb.setBackground(color);
 
   Triangle t(Vector3D(200.0, 40.0, 0.0), Vector3D(250.0, 80.0, 0.0), Vector3D(225.0, 200.0, 0.0));
   

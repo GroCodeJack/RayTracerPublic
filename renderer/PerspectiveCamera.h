@@ -21,6 +21,11 @@ class PerspectiveCamera: public Camera {
   {
   }
 
+ PerspectiveCamera(Vector3D position, Vector3D dir, float focalLength, float ar, float ipw):
+  Camera(position, dir), m_focalLength(focalLength), m_ar(ar), m_ip_w(ipw), m_nX(400), m_nY(400)
+  {
+  }
+
   Ray genRay(int i, int j, int nx, int ny);
 
   float getFL(){
@@ -32,5 +37,6 @@ class PerspectiveCamera: public Camera {
   int m_nY;
   float m_focalLength;
   float m_ip_w;
-
+  float m_ar;
+		    
 };

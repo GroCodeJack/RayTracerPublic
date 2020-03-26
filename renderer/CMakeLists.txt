@@ -30,22 +30,21 @@ add_library(graphics
   Shape.h
   CoordinateSys.h
   CoordinateSys.cpp
-  )
-
-add_executable(test_FrameBuffer
-  test_Framebuffer.cpp
+  Circle.h
+  Circle.cpp
+  Scene_jsonParser.cpp
+  Shader.h
+  LambertianShader.h
+  BlinnPhongShader.h
+  HitStructure.h
+  Light.h
+  
   )
 
 add_executable(test_RayTracer
   test_RayTracer.cpp
   )
 
-
-target_link_libraries(test_FrameBuffer graphics)
-target_link_libraries(test_FrameBuffer sive-util)
-target_link_libraries(test_FrameBuffer ${Boost_PROGRAM_OPTIONS_LIBRARIES})
-target_link_libraries(test_FrameBuffer ${PNG_LIBRARIES})
-target_link_libraries(test_FrameBuffer ${ZLIB_LIBRARIES})
 
 target_link_libraries(test_RayTracer graphics)
 target_link_libraries(test_RayTracer sive-util)

@@ -19,5 +19,4 @@ class Ray{
  private:
   Vector3D m_origin;
   Vector3D m_direction;
-
 };
