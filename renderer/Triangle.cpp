@@ -54,7 +54,7 @@ Vector3D Triangle::getColor(){
   return m_color;
 }
 
-bool Triangle::closestHit(const Ray &r, float tmin, float &tmax) const {
+bool Triangle::closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h) const {
  
   float a = vertices[0][0] - vertices[1][0];
   float d = vertices[0][0] - vertices[2][0];
@@ -62,7 +62,7 @@ bool Triangle::closestHit(const Ray &r, float tmin, float &tmax) const {
 
   float b = vertices[0][1] - vertices[1][1];
   float e = vertices[0][1] - vertices[2][1];
-  float h = r.getDirection()[1];
+  float hh = r.getDirection()[1];
 
   float c = vertices[0][2] - vertices[1][2];
   float f = vertices[0][2] - vertices[2][2];
@@ -72,9 +72,9 @@ bool Triangle::closestHit(const Ray &r, float tmin, float &tmax) const {
   float k = vertices[0][1] - r.getOrigin()[1];
   float l = vertices[0][2] - r.getOrigin()[2];
 
-  float ei_minus_hf = ((e * i) - (h * f));
+  float ei_minus_hf = ((e * i) - (hh * f));
   float gf_minus_di = ((g * f) - (d * i));
-  float dh_minus_eg = ((d * h) - (e * g));
+  float dh_minus_eg = ((d * hh) - (e * g));
 
   float ak_minus_jb = ((a * k) - (j * b));
   float jc_minus_al = ((j * c) - (a * l));
@@ -83,7 +83,7 @@ bool Triangle::closestHit(const Ray &r, float tmin, float &tmax) const {
   float M = (a * ei_minus_hf) + (b * gf_minus_di) + (c * dh_minus_eg);
 
   float beta_num = (j * ei_minus_hf) + (k * gf_minus_di) + (l * dh_minus_eg);
-  float gamma_num = (i * ak_minus_jb) + (h * jc_minus_al) + (g * bl_minus_kc);
+  float gamma_num = (i * ak_minus_jb) + (hh * jc_minus_al) + (g * bl_minus_kc);
   float t_num = (f * ak_minus_jb) + (e * jc_minus_al) + (d * bl_minus_kc);
 
   float beta = beta_num / M;
@@ -102,6 +102,7 @@ bool Triangle::closestHit(const Ray &r, float tmin, float &tmax) const {
     return false;
   }
   tmax = t;
+  h.objColor = m_color;
   return true;
 
 }

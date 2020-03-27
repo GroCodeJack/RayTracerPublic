@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Ray.h"
 #include "Shader.h"
+#include <limits>
 
 class Shader;
 
@@ -20,9 +21,10 @@ class HitStructure {
   
 
   double t;
-  Ray r;
+  //Ray r;
   Vector3D pt;
   Vector3D n;
   Shader *shaderPtr;
+  Vector3D objColor;
 
 };

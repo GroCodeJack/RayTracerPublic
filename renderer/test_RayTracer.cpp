@@ -34,6 +34,11 @@ int main(int argc, char *argv[])
   sc.parseJSONData(args.inputFileName);
   
   Camera *cam = new PerspectiveCamera;
+  cam->getCoord().getU().printVector();
+  cam->getCoord().getV().printVector();
+  cam->getCoord().getW().printVector();
+  
+  
   sc.addCamera(cam);
     /*;
 

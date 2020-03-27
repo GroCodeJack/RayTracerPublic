@@ -3,7 +3,9 @@
 
 renderer/CMakeFiles/graphics.dir/Circle.cpp.o: ../renderer/Circle.cpp
 renderer/CMakeFiles/graphics.dir/Circle.cpp.o: ../renderer/Circle.h
+renderer/CMakeFiles/graphics.dir/Circle.cpp.o: ../renderer/HitStructure.h
 renderer/CMakeFiles/graphics.dir/Circle.cpp.o: ../renderer/Ray.h
+renderer/CMakeFiles/graphics.dir/Circle.cpp.o: ../renderer/Shader.h
 renderer/CMakeFiles/graphics.dir/Circle.cpp.o: ../renderer/Shape.h
 renderer/CMakeFiles/graphics.dir/Circle.cpp.o: ../renderer/Vector3D.h
 
@@ -51,9 +53,11 @@ renderer/CMakeFiles/graphics.dir/PerspectiveCamera.cpp.o: ../renderer/Ray.h
 renderer/CMakeFiles/graphics.dir/PerspectiveCamera.cpp.o: ../renderer/Vector3D.h
 
 renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/FrameBuffer.h
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/HitStructure.h
 renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Rasterizer.cpp
 renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Rasterizer.h
 renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Ray.h
+renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Shader.h
 renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Shape.h
 renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Triangle.h
 renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o: ../renderer/Vector3D.h
@@ -301,6 +305,7 @@ renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o: ../json-develop/include/nlohma
 renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o: ../renderer/Camera.h
 renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o: ../renderer/CoordinateSys.h
 renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o: ../renderer/FrameBuffer.h
+renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o: ../renderer/HitStructure.h
 renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o: ../renderer/Light.h
 renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o: ../renderer/Ray.h
 renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o: ../renderer/RayTracer.cpp
@@ -554,6 +559,7 @@ renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/Camera.h
 renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/Circle.h
 renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/CoordinateSys.h
 renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/FrameBuffer.h
+renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/HitStructure.h
 renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/Light.h
 renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/PerspectiveCamera.h
 renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/Ray.h
@@ -565,7 +571,9 @@ renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/Triangle.h
 renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o: ../renderer/Vector3D.h
 
 renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/FrameBuffer.h
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/HitStructure.h
 renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/Ray.h
+renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/Shader.h
 renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/Shape.h
 renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/Triangle.cpp
 renderer/CMakeFiles/graphics.dir/Triangle.cpp.o: ../renderer/Triangle.h

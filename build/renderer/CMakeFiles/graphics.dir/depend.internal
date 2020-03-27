@@ -4,7 +4,9 @@
 renderer/CMakeFiles/graphics.dir/Circle.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.cpp
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shape.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.o
@@ -52,9 +54,11 @@ renderer/CMakeFiles/graphics.dir/PerspectiveCamera.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 renderer/CMakeFiles/graphics.dir/Rasterizer.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.cpp
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shape.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
@@ -302,6 +306,7 @@ renderer/CMakeFiles/graphics.dir/RayTracer.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Camera.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/CoordinateSys.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Light.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/RayTracer.cpp
@@ -555,6 +560,7 @@ renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/CoordinateSys.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Light.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/PerspectiveCamera.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
@@ -566,7 +572,9 @@ renderer/CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 renderer/CMakeFiles/graphics.dir/Triangle.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shape.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h

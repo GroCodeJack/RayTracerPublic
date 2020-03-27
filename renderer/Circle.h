@@ -4,6 +4,8 @@
 #include "Ray.h"
 #include "Shape.h"
 #include "math.h"
+#include "HitStructure.h"
+#include <cstdlib>
 
 class Circle : public Shape {
 
@@ -16,7 +18,7 @@ class Circle : public Shape {
   Vector3D getColor();
   void setColor(float x, float y, float z);
  
-  bool closestHit(const Ray &r, float tmin, float &tmax) const;
+  bool closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h) const;
 
  private:
   Vector3D m_center;

@@ -2359,6 +2359,10 @@ Shape.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shape.h
 math.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/math.h
+HitStructure.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
+cstdlib
+-
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/CoordinateSys.cpp
 CoordinateSys.h
@@ -2392,6 +2396,16 @@ string
 Vector3D.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 vector
+-
+
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
+iostream
+-
+Ray.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
+Shader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
+limits
 -
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Light.h
@@ -2543,6 +2557,8 @@ string
 -
 Ray.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
+HitStructure.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp
 Vector3D.h
@@ -2565,6 +2581,8 @@ FrameBuffer.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
 Ray.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
+HitStructure.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.cpp
 Vector3D.h

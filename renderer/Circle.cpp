@@ -34,7 +34,7 @@ Vector3D Circle::getColor(){
 }
 
 
-bool Circle::closestHit(const Ray &r, float tmin, float &tmax) const{
+bool Circle::closestHit(const Ray &r, float tmin, float &tmax, HitStructure& h) const{
 
   Vector3D d = r.getDirection();
   Vector3D e = r.getOrigin();
@@ -49,16 +49,32 @@ bool Circle::closestHit(const Ray &r, float tmin, float &tmax) const{
 
   float discr = B_squared - ((d_squared) * (emcs_minus_rs));
   
-  if (discr < tmax){
+  if (discr < 0){
     return false;
   }
-  else {
-    float sqrt_discr = sqrt(discr);
-    float tplus = (B + sqrt_discr) / d_squared;
-    float tminus = (B - sqrt_discr) / d_squared;
+  std::cout << "B: " << B << std::endl;
+  float sqrt_discr = sqrt(discr);
+  std::cout << "Sqrt discr: " << sqrt_discr << std::endl;
+  float tplus = (B + sqrt_discr) / d_squared;
+  std::cout << "t plus: " << tplus << std::endl;
+  
+  float tminus = (B - sqrt_discr) / d_squared;
+  std::cout << "t minus: " << tminus << std::endl;
+  float smallerT = std::max(abs(tplus), abs(tminus));
+  std::cout << "smaller t: " << smallerT << std::endl;
+  if(smallerT > abs(tmax) || smallerT < abs(tmin)){
+    //std::cout << smallerT << " " << tmax << std::endl;
+    return false;
   }
- 
+  tmax = smallerT;
+
+  std::cout << "tmax: " << tmax << std::endl;
+  h.objColor = m_color;
+    
   return true;
+    
+     
+  
   
  
   

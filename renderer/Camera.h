@@ -23,6 +23,11 @@ class Camera {
   
   virtual Ray genRay(int i, int j, int nx, int ny) = 0;
 
+  CoordinateSys getCoord(){
+    return m_coord;
+  }
+  
+
  protected:
   Vector3D m_position;
   std::string m_name;

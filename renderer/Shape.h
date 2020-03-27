@@ -5,11 +5,12 @@
 #include "Vector3D.h"
 #include <string>
 #include "Ray.h"
+#include "HitStructure.h"
 
 class Shape {
  public:
   //Shape();
-  virtual bool closestHit(const Ray &r, float tmin, float &tmax) const = 0;
+  virtual bool closestHit(const Ray &r, float tmin, float &tmax, HitStructure& h) const = 0;
   Vector3D getColor(){ return m_color; }
   void setName(std::string name){ m_name = name; }
   void setColor(float x, float y, float z){
