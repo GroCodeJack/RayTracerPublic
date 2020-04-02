@@ -2332,6 +2332,22 @@ cassert
 io_base.hpp
 ../src/png++/io_base.hpp
 
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.h
+iostream
+-
+Vector3D.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
+string
+-
+Shape.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shape.h
+Shader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
+vector
+-
+cstdlib
+-
+
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Camera.h
 iostream
 -
@@ -2408,6 +2424,30 @@ Shader.h
 limits
 -
 
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.cpp
+LambertianShader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.h
+
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.h
+iostream
+-
+Vector3D.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
+string
+-
+Shader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
+vector
+-
+cstdlib
+-
+HitStructure.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
+SceneContainer.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/SceneContainer.h
+cmath
+-
+
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Light.h
 Vector3D.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
@@ -2477,6 +2517,8 @@ Vector3D.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 iostream
 -
+cstdlib
+-
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/RayTracer.h
 vector
@@ -2491,6 +2533,8 @@ SceneContainer.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/SceneContainer.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/SceneContainer.h
+map
+-
 glm/gtx/string_cast.hpp
 -
 iostream
@@ -2511,6 +2555,8 @@ Light.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Light.h
 nlohmann/json.hpp
 -
+HitStructure.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Scene_jsonParser.cpp
 glm/gtx/string_cast.hpp
@@ -2533,6 +2579,14 @@ Triangle.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
 stack
 -
+BlinnPhongShader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.h
+LambertianShader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.h
+Light.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Light.h
+Shader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
 nlohmann/json.hpp
 -
 
@@ -2545,6 +2599,8 @@ string
 -
 vector
 -
+HitStructure.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shape.h
 vector
@@ -2559,18 +2615,12 @@ Ray.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
 HitStructure.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
+Shader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.cpp
-Vector3D.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
-FrameBuffer.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
 Triangle.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
-Ray.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
-vector
--
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
 Shape.h

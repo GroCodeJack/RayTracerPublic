@@ -1,0 +1,75 @@
+{
+    "scene": {
+	"camera": [{
+	    "position": "0 0 7",
+	    "viewDir": "0 0 -1",
+	    "focalLength": 1.0,
+	    "imagePlaneWidth": 0.5,
+	    "_name": "main",
+	    "_type": "perspective"
+	}],
+	"light": [{
+	    "position": "100 100 75",
+	    "intensity": "1.0 0.9804 0.9569",
+	    "_type": "point"
+	}],
+	"shader": [
+	    {
+		"diffuse": "0.03 0.35 0.74",
+		"_name": "neptune",
+		"_type": "Lambertian"
+	    },
+	    {
+		"diffuse": "0.6 0.6 0.6",
+		"_name": "moon",
+		"_type": "Lambertian"
+	    },
+	    {
+		"diffuse": "0.4 0.4 0.4",
+		"_name": "moon2",
+		"_type": "Lambertian"
+	    },
+	    {
+		"diffuse": "0.63",
+		"_name": "moon3",
+		"_type": "Lambertian"
+	    }],
+	"shape": [
+	    {
+		"shader": {
+		    "_ref": "neptune"
+		},
+		"center": "-0.5 -0.5 -6",
+		"radius": 1,
+		"_name": "sphere1",
+		"_type": "sphere"
+	    },
+	    {
+		"shader": {
+		    "_ref": "moon2"
+		},
+		"center": "0.1 -0.4  -3.5",
+		"radius": 0.04,
+		"_name": "sphere2",
+		"_type": "sphere"
+	    },
+	    {
+	        "shader": {
+		    "_ref": "moon"
+		},
+	        "center": "-0.25 -0.5 -3",
+	        "radius": 0.05,
+	        "_name": "sphere2",
+	        "_type": "sphere"
+	    },
+	    {
+	        "shader": {
+		    "_ref": "moon3"
+		},
+	        "center": "-0.35 -0.4 -3",
+	        "radius": 0.04,
+	        "_name": "sphere2",
+	        "_type": "sphere"
+	    }]
+    }
+}

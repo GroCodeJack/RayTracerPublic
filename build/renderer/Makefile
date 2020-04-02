@@ -276,6 +276,33 @@ FrameBuffer.cpp.s:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.s
 .PHONY : FrameBuffer.cpp.s
 
+LambertianShader.o: LambertianShader.cpp.o
+
+.PHONY : LambertianShader.o
+
+# target to build an object file
+LambertianShader.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/LambertianShader.cpp.o
+.PHONY : LambertianShader.cpp.o
+
+LambertianShader.i: LambertianShader.cpp.i
+
+.PHONY : LambertianShader.i
+
+# target to preprocess a source file
+LambertianShader.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/LambertianShader.cpp.i
+.PHONY : LambertianShader.cpp.i
+
+LambertianShader.s: LambertianShader.cpp.s
+
+.PHONY : LambertianShader.s
+
+# target to generate assembly for a file
+LambertianShader.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/LambertianShader.cpp.s
+.PHONY : LambertianShader.cpp.s
+
 PerspectiveCamera.o: PerspectiveCamera.cpp.o
 
 .PHONY : PerspectiveCamera.o
@@ -489,6 +516,9 @@ help:
 	@echo "... FrameBuffer.o"
 	@echo "... FrameBuffer.i"
 	@echo "... FrameBuffer.s"
+	@echo "... LambertianShader.o"
+	@echo "... LambertianShader.i"
+	@echo "... LambertianShader.s"
 	@echo "... PerspectiveCamera.o"
 	@echo "... PerspectiveCamera.i"
 	@echo "... PerspectiveCamera.s"

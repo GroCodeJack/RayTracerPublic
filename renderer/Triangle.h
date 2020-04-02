@@ -4,6 +4,7 @@
 #include "FrameBuffer.h"
 #include "Ray.h"
 #include "HitStructure.h"
+//#include "SceneContainer.h"
 
 class Triangle : public Shape {
  public:
@@ -16,10 +17,12 @@ class Triangle : public Shape {
   void setColor(float x, float y, float z);
   Vector3D getColor();
   bool closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h) const;
+  void setShader(Shader *s){ shader = s; }
   
 
 
  private:
   std::vector<Vector3D> vertices;
+  Shader *shader;
 
 };

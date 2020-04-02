@@ -26,6 +26,8 @@ class Camera {
   CoordinateSys getCoord(){
     return m_coord;
   }
+
+  Vector3D getPosition(){ return m_position; }
   
 
  protected:

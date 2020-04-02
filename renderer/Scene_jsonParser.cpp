@@ -9,6 +9,11 @@
 #include "Circle.h"
 #include "Triangle.h"
 #include <stack>
+#include "BlinnPhongShader.h"
+#include "LambertianShader.h"
+#include "Light.h"
+#include "Shader.h"
+
 //#include "Constants.h"
 
 #include <nlohmann/json.hpp>
@@ -115,18 +120,23 @@ Shape *SceneContainer::extractAndCreateShapeFromJSONData( json &shapeData )
 
     center = shapeData["center"];
     radius = shapeData["radius"];
+    std::string shaderName = shapeData["shader"]["_ref"];
+    std::cout << shaderName << std::endl;
 
     sPtr = new Circle(center[0], center[1], center[2], radius);
-    sPtr->setColor(((float) rand() / (RAND_MAX)), ((float) rand() / (RAND_MAX)), ((float) rand() / (RAND_MAX)));
+    sPtr->setShader(locateShader(shaderName));
+    //sPtr->setColor(((float) rand() / (RAND_MAX)), ((float) rand() / (RAND_MAX)), ((float) rand() / (RAND_MAX)));
   }
   else if (type == "triangle") {
     Vector3D v0, v1, v2;
     v0 = shapeData["v0"];
     v1 = shapeData["v1"];
     v2 = shapeData["v2"];
+    std::string shaderName = shapeData["shader"]["_ref"];
 
     sPtr = new Triangle(v0, v1, v2);
-    sPtr->setColor(((float) rand() / (RAND_MAX)), ((float) rand() / (RAND_MAX)), ((float) rand() / (RAND_MAX)));
+    sPtr->setShader(locateShader(shaderName));
+    //sPtr->setColor(((float) rand() / (RAND_MAX)), ((float) rand() / (RAND_MAX)), ((float) rand() / (RAND_MAX)));
     
     std::cout << "Created Triangle!" << std::endl;
   }
@@ -251,7 +261,7 @@ void SceneContainer::parseJSONData(const std::string &filename)
   // Loop over shaders and place them in a std::map
   //
   // //////////////////////////////
-  /*
+  
   std::cout << "Number of shaders: " << j["scene"]["shader"].size() << std::endl;
   for (auto i=0; i<j["scene"]["shader"].size(); i++) {
 
@@ -259,22 +269,24 @@ void SceneContainer::parseJSONData(const std::string &filename)
     std::string shaderType = shaderInfo["_type"];
 
     Shader *shaderPtr = nullptr;
-    if (shaderType == "Lambertian" || shaderType == "LambertianPT") {
+    if (shaderType == "Lambertian" /*|| shaderType == "LambertianPT" */) {
 
-      sivelab::Vector3D diffuse;
+      Vector3D diffuse;
       diffuse = shaderInfo["diffuse"];
+      std::cout << diffuse[0] << " " << diffuse[1] << " " << diffuse[2] << std::endl;
 
-      ShaderCoefficient kd(diffuse, 0);
+      //ShaderCoefficient kd(diffuse, 0);
 
       if (shaderType == "Lambertian")
-	shaderPtr = new sivelab::Lambertian(kd);
-      else if (shaderType == "LambertianPT")
-	shaderPtr = new sivelab::LambertianPT(kd);
+	shaderPtr = new LambertianShader(diffuse);
+      //else if (shaderType == "LambertianPT")
+      //shaderPtr = new LambertianPT(kd);
     }
+    /*
     else if (shaderType == "BlinnPhong" || shaderType == "Phong") {
 
       float phongExp;
-      sivelab::Vector3D diffuse, specular;
+      Vector3D diffuse, specular;
       diffuse = shaderInfo["diffuse"];
       specular = shaderInfo["specular"];
       phongExp = shaderInfo["phongExp"];
@@ -282,24 +294,24 @@ void SceneContainer::parseJSONData(const std::string &filename)
       ShaderCoefficient kd(diffuse, 0);
       ShaderCoefficient ks(specular, 0);
       if (shaderType == "BlinnPhong")
-	shaderPtr = new sivelab::BlinnPhong(kd, ks, phongExp);
+	shaderPtr = new BlinnPhong(kd, ks, phongExp);
       else
-	shaderPtr = new sivelab::Phong(diffuse, specular, phongExp);
+	shaderPtr = new Phong(diffuse, specular, phongExp);
     }
     else if (shaderType == "Mirror") {
-      shaderPtr = new sivelab::Mirror();
+      shaderPtr = new Mirror();
     }
     else if (shaderType == "Glaze") {
-      sivelab::Vector3D kd;
+      Vector3D kd;
       kd = shaderInfo["diffuse"];
 
       float mirrorCoef = 1.0;
       mirrorCoef = shaderInfo["mirrorCoef"];
 
-      shaderPtr = new sivelab::Glaze(kd, mirrorCoef);
+      shaderPtr = new Glaze(kd, mirrorCoef);
     }
     else if (shaderType == "BlinnPhongMirrored") {
-      sivelab::Vector3D d, s;
+      Vector3D d, s;
 
       d = shaderInfo["diffuse"];
       ShaderCoefficient kd(d, 0);
@@ -328,16 +340,17 @@ void SceneContainer::parseJSONData(const std::string &filename)
       float mirrorCoef = shaderInfo[ "mirrorCoef" ];
       float roughnessCoef = shaderInfo[ "roughness"];
 
-      shaderPtr = new sivelab::BlinnPhongMirrored(kd, ks, phongExp, mirrorCoef, roughnessCoef);
+      shaderPtr = new BlinnPhongMirrored(kd, ks, phongExp, mirrorCoef, roughnessCoef);
     }
+    */
 
     assert(shaderPtr);
 
     std::string name = shaderInfo["_name"];
-    shaderPtr->setName(name);
+    //shaderPtr->setName(name);
     shaderMap[name] = shaderPtr;
   }
-  */
+  
 
 
   // //////////////////////////////////////
@@ -383,19 +396,22 @@ void SceneContainer::parseJSONData(const std::string &filename)
   std::cout << "Completed parsing shapes." << std::endl;
 
   // Walk over all ligths
-  /*
+  
   std::cout << "Number of lights: " << j["scene"]["light"].size() << std::endl;
   for (auto i=0; i<j["scene"]["light"].size(); i++) {
 
     std::string type = j["scene"]["light"][i]["_type"];
 
-    sivelab::Vector3D position, radiantEnergy;
+    Vector3D position, radiantEnergy;
     position = j["scene"]["light"][i]["position"];
     radiantEnergy = j["scene"]["light"][i]["intensity"];
 
     if ( type == "point" ) {
-      lights.push_back( new Light(position, radiantEnergy) );
+      m_allLights.push_back( new Light(position, radiantEnergy) );
+      std::cout << "light added" << std::endl;
     }
+  }
+    /*
     else if ( type == "area" ) {
 
       sivelab::Vector3D normal;
@@ -441,7 +457,8 @@ void SceneContainer::parseJSONData(const std::string &filename)
       tPtr->provideShader( eSPtr );
 
       m_otherObjs.push_back( tPtr );
-  */
+    */
+  
     
 
   

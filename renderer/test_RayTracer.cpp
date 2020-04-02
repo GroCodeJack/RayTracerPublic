@@ -18,6 +18,8 @@
 #include "Shape.h"
 #include "Circle.h"
 #include <string>
+#include "Shader.h"
+#include "LambertianShader.h"
 
 bool isPrime(int n);
 

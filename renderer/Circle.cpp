@@ -52,32 +52,30 @@ bool Circle::closestHit(const Ray &r, float tmin, float &tmax, HitStructure& h) 
   if (discr < 0){
     return false;
   }
-  std::cout << "B: " << B << std::endl;
+ 
   float sqrt_discr = sqrt(discr);
-  std::cout << "Sqrt discr: " << sqrt_discr << std::endl;
+ 
   float tplus = (B + sqrt_discr) / d_squared;
-  std::cout << "t plus: " << tplus << std::endl;
+ 
   
   float tminus = (B - sqrt_discr) / d_squared;
-  std::cout << "t minus: " << tminus << std::endl;
-  float smallerT = std::max(abs(tplus), abs(tminus));
-  std::cout << "smaller t: " << smallerT << std::endl;
+ 
+  float smallerT = std::max(fabs(tplus), fabs(tminus));
+ 
   if(smallerT > abs(tmax) || smallerT < abs(tmin)){
-    //std::cout << smallerT << " " << tmax << std::endl;
+ 
     return false;
   }
   tmax = smallerT;
 
-  std::cout << "tmax: " << tmax << std::endl;
-  h.objColor = m_color;
+ 
+  Vector3D txd = tplus * r.getDirection();
+  h.pt = r.getOrigin() + txd;
+  //std::cout << h.pt[0] << h.pt[1] << h.pt[2] << std::endl;
+  Vector3D center_to_pt = h.pt - m_center;
+  center_to_pt /= center_to_pt.findLength();
+  h.n = center_to_pt;
     
   return true;
-    
-     
-  
-  
- 
-  
-
 
 }

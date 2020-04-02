@@ -6,6 +6,7 @@
 #include <string>
 #include "Ray.h"
 #include "HitStructure.h"
+#include "Shader.h"
 
 class Shape {
  public:
@@ -18,9 +19,12 @@ class Shape {
     m_color[1] = y;
     m_color[2] = z;
   }
+  void setShader(Shader *s){ shader = s; }
+  Shader *getShader(){ return shader; }
 
  protected:
   // std::vector<float> vertices;
   Vector3D m_color;
   std::string m_name;
+  Shader *shader;
 };

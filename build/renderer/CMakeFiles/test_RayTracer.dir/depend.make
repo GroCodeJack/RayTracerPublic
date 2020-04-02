@@ -276,6 +276,7 @@ renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o: ../renderer/Circle.
 renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o: ../renderer/CoordinateSys.h
 renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o: ../renderer/FrameBuffer.h
 renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o: ../renderer/HitStructure.h
+renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o: ../renderer/LambertianShader.h
 renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o: ../renderer/Light.h
 renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o: ../renderer/PerspectiveCamera.h
 renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o: ../renderer/Rasterizer.h

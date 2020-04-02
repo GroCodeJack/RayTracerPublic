@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphics.dir/CoordinateSys.cpp.o"
   "CMakeFiles/graphics.dir/Circle.cpp.o"
   "CMakeFiles/graphics.dir/Scene_jsonParser.cpp.o"
+  "CMakeFiles/graphics.dir/LambertianShader.cpp.o"
   "libgraphics.pdb"
   "libgraphics.a"
 )

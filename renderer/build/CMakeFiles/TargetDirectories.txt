@@ -1,5 +1,4 @@
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles/edit_cache.dir
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles/graphics.dir
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles/test_FrameBuffer.dir
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles/rebuild_cache.dir
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles/test_RayTracer.dir
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles/graphics.dir

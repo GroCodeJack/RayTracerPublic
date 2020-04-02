@@ -277,6 +277,7 @@ renderer/CMakeFiles/test_RayTracer.dir/test_RayTracer.cpp.o
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/CoordinateSys.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
+ /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Light.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/PerspectiveCamera.h
  /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Rasterizer.h

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_RayTracer
+
+# Build rule for target.
+test_RayTracer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_RayTracer
+.PHONY : test_RayTracer
+
+# fast build rule for target.
+test_RayTracer/fast:
+	$(MAKE) -f CMakeFiles/test_RayTracer.dir/build.make CMakeFiles/test_RayTracer.dir/build
+.PHONY : test_RayTracer/fast
+
+#=============================================================================
 # Target rules for targets named graphics
 
 # Build rule for target.
@@ -123,31 +136,20 @@ graphics/fast:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/build
 .PHONY : graphics/fast
 
-#=============================================================================
-# Target rules for targets named test_FrameBuffer
+# target to build an object file
+Circle.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Circle.o
+.PHONY : Circle.o
 
-# Build rule for target.
-test_FrameBuffer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_FrameBuffer
-.PHONY : test_FrameBuffer
+# target to preprocess a source file
+Circle.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Circle.i
+.PHONY : Circle.i
 
-# fast build rule for target.
-test_FrameBuffer/fast:
-	$(MAKE) -f CMakeFiles/test_FrameBuffer.dir/build.make CMakeFiles/test_FrameBuffer.dir/build
-.PHONY : test_FrameBuffer/fast
-
-#=============================================================================
-# Target rules for targets named test_RayTracer
-
-# Build rule for target.
-test_RayTracer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_RayTracer
-.PHONY : test_RayTracer
-
-# fast build rule for target.
-test_RayTracer/fast:
-	$(MAKE) -f CMakeFiles/test_RayTracer.dir/build.make CMakeFiles/test_RayTracer.dir/build
-.PHONY : test_RayTracer/fast
+# target to generate assembly for a file
+Circle.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Circle.s
+.PHONY : Circle.s
 
 # target to build an object file
 CoordinateSys.o:
@@ -178,6 +180,21 @@ FrameBuffer.i:
 FrameBuffer.s:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/FrameBuffer.s
 .PHONY : FrameBuffer.s
+
+# target to build an object file
+LambertianShader.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/LambertianShader.o
+.PHONY : LambertianShader.o
+
+# target to preprocess a source file
+LambertianShader.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/LambertianShader.i
+.PHONY : LambertianShader.i
+
+# target to generate assembly for a file
+LambertianShader.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/LambertianShader.s
+.PHONY : LambertianShader.s
 
 # target to build an object file
 PerspectiveCamera.o:
@@ -225,6 +242,21 @@ RayTracer.s:
 .PHONY : RayTracer.s
 
 # target to build an object file
+Scene_jsonParser.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Scene_jsonParser.o
+.PHONY : Scene_jsonParser.o
+
+# target to preprocess a source file
+Scene_jsonParser.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Scene_jsonParser.i
+.PHONY : Scene_jsonParser.i
+
+# target to generate assembly for a file
+Scene_jsonParser.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Scene_jsonParser.s
+.PHONY : Scene_jsonParser.s
+
+# target to build an object file
 Triangle.o:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Triangle.o
 .PHONY : Triangle.o
@@ -255,21 +287,6 @@ Vector3D.s:
 .PHONY : Vector3D.s
 
 # target to build an object file
-test_Framebuffer.o:
-	$(MAKE) -f CMakeFiles/test_FrameBuffer.dir/build.make CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.o
-.PHONY : test_Framebuffer.o
-
-# target to preprocess a source file
-test_Framebuffer.i:
-	$(MAKE) -f CMakeFiles/test_FrameBuffer.dir/build.make CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.i
-.PHONY : test_Framebuffer.i
-
-# target to generate assembly for a file
-test_Framebuffer.s:
-	$(MAKE) -f CMakeFiles/test_FrameBuffer.dir/build.make CMakeFiles/test_FrameBuffer.dir/test_Framebuffer.s
-.PHONY : test_Framebuffer.s
-
-# target to build an object file
 test_RayTracer.o:
 	$(MAKE) -f CMakeFiles/test_RayTracer.dir/build.make CMakeFiles/test_RayTracer.dir/test_RayTracer.o
 .PHONY : test_RayTracer.o
@@ -291,16 +308,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... graphics"
-	@echo "... test_FrameBuffer"
 	@echo "... rebuild_cache"
 	@echo "... test_RayTracer"
+	@echo "... graphics"
+	@echo "... Circle.o"
+	@echo "... Circle.i"
+	@echo "... Circle.s"
 	@echo "... CoordinateSys.o"
 	@echo "... CoordinateSys.i"
 	@echo "... CoordinateSys.s"
 	@echo "... FrameBuffer.o"
 	@echo "... FrameBuffer.i"
 	@echo "... FrameBuffer.s"
+	@echo "... LambertianShader.o"
+	@echo "... LambertianShader.i"
+	@echo "... LambertianShader.s"
 	@echo "... PerspectiveCamera.o"
 	@echo "... PerspectiveCamera.i"
 	@echo "... PerspectiveCamera.s"
@@ -310,15 +332,15 @@ help:
 	@echo "... RayTracer.o"
 	@echo "... RayTracer.i"
 	@echo "... RayTracer.s"
+	@echo "... Scene_jsonParser.o"
+	@echo "... Scene_jsonParser.i"
+	@echo "... Scene_jsonParser.s"
 	@echo "... Triangle.o"
 	@echo "... Triangle.i"
 	@echo "... Triangle.s"
 	@echo "... Vector3D.o"
 	@echo "... Vector3D.i"
 	@echo "... Vector3D.s"
-	@echo "... test_Framebuffer.o"
-	@echo "... test_Framebuffer.i"
-	@echo "... test_Framebuffer.s"
 	@echo "... test_RayTracer.o"
 	@echo "... test_RayTracer.i"
 	@echo "... test_RayTracer.s"

@@ -35,9 +35,11 @@ add_library(graphics
   Scene_jsonParser.cpp
   Shader.h
   LambertianShader.h
-  BlinnPhongShader.h
+  LambertianShader.cpp
+  #BlinnPhongShader.h
   HitStructure.h
   Light.h
+  #LambertianShader.cpp
   
   )
 

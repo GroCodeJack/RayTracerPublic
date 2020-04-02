@@ -1,8 +1,8 @@
-#include "Vector3D.h"
-#include "FrameBuffer.h"
+//#include "Vector3D.h"
+//#include "FrameBuffer.h"
 #include "Triangle.h"
-#include "Ray.h"
-#include <vector>
+//#include "Ray.h"
+//#include <vector>
 
 Triangle::Triangle()
   : vertices(3)
@@ -103,6 +103,11 @@ bool Triangle::closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h
   }
   tmax = t;
   h.objColor = m_color;
+  
+  Vector3D norm = cross((vertices[1] - vertices[0]), (vertices[2] - vertices[0]));
+  norm /= norm.findLength();
+  h.n = norm;
+  h.pt = r.getOrigin() + (t * r.getDirection());
   return true;
 
 }

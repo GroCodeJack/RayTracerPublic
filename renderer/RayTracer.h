@@ -25,6 +25,11 @@ class RayTracer {
     return m_fb;
   }
 
+  void spaceMode();
+  void addSmallStar(int rc, int i, int j);
+  void addBigStar(int rc, int i, int j);
+  void addMilkyWay(int rc, int bs, int i, int j);
+
  private:
   SceneContainer m_sc;
   FrameBuffer m_fb;

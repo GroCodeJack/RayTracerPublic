@@ -225,6 +225,78 @@ CMakeFiles/graphics.dir/CoordinateSys.o.provides: CMakeFiles/graphics.dir/Coordi
 CMakeFiles/graphics.dir/CoordinateSys.o.provides.build: CMakeFiles/graphics.dir/CoordinateSys.o
 
 
+CMakeFiles/graphics.dir/Circle.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/Circle.o: ../Circle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/graphics.dir/Circle.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Circle.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.cpp
+
+CMakeFiles/graphics.dir/Circle.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Circle.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.cpp > CMakeFiles/graphics.dir/Circle.i
+
+CMakeFiles/graphics.dir/Circle.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Circle.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.cpp -o CMakeFiles/graphics.dir/Circle.s
+
+CMakeFiles/graphics.dir/Circle.o.requires:
+
+.PHONY : CMakeFiles/graphics.dir/Circle.o.requires
+
+CMakeFiles/graphics.dir/Circle.o.provides: CMakeFiles/graphics.dir/Circle.o.requires
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Circle.o.provides.build
+.PHONY : CMakeFiles/graphics.dir/Circle.o.provides
+
+CMakeFiles/graphics.dir/Circle.o.provides.build: CMakeFiles/graphics.dir/Circle.o
+
+
+CMakeFiles/graphics.dir/Scene_jsonParser.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/Scene_jsonParser.o: ../Scene_jsonParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graphics.dir/Scene_jsonParser.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Scene_jsonParser.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Scene_jsonParser.cpp
+
+CMakeFiles/graphics.dir/Scene_jsonParser.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Scene_jsonParser.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Scene_jsonParser.cpp > CMakeFiles/graphics.dir/Scene_jsonParser.i
+
+CMakeFiles/graphics.dir/Scene_jsonParser.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Scene_jsonParser.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Scene_jsonParser.cpp -o CMakeFiles/graphics.dir/Scene_jsonParser.s
+
+CMakeFiles/graphics.dir/Scene_jsonParser.o.requires:
+
+.PHONY : CMakeFiles/graphics.dir/Scene_jsonParser.o.requires
+
+CMakeFiles/graphics.dir/Scene_jsonParser.o.provides: CMakeFiles/graphics.dir/Scene_jsonParser.o.requires
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Scene_jsonParser.o.provides.build
+.PHONY : CMakeFiles/graphics.dir/Scene_jsonParser.o.provides
+
+CMakeFiles/graphics.dir/Scene_jsonParser.o.provides.build: CMakeFiles/graphics.dir/Scene_jsonParser.o
+
+
+CMakeFiles/graphics.dir/LambertianShader.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/LambertianShader.o: ../LambertianShader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphics.dir/LambertianShader.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/LambertianShader.o -c /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.cpp
+
+CMakeFiles/graphics.dir/LambertianShader.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/LambertianShader.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.cpp > CMakeFiles/graphics.dir/LambertianShader.i
+
+CMakeFiles/graphics.dir/LambertianShader.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/LambertianShader.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.cpp -o CMakeFiles/graphics.dir/LambertianShader.s
+
+CMakeFiles/graphics.dir/LambertianShader.o.requires:
+
+.PHONY : CMakeFiles/graphics.dir/LambertianShader.o.requires
+
+CMakeFiles/graphics.dir/LambertianShader.o.provides: CMakeFiles/graphics.dir/LambertianShader.o.requires
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/LambertianShader.o.provides.build
+.PHONY : CMakeFiles/graphics.dir/LambertianShader.o.provides
+
+CMakeFiles/graphics.dir/LambertianShader.o.provides.build: CMakeFiles/graphics.dir/LambertianShader.o
+
+
 # Object files for target graphics
 graphics_OBJECTS = \
 "CMakeFiles/graphics.dir/FrameBuffer.o" \
@@ -233,7 +305,10 @@ graphics_OBJECTS = \
 "CMakeFiles/graphics.dir/Rasterizer.o" \
 "CMakeFiles/graphics.dir/PerspectiveCamera.o" \
 "CMakeFiles/graphics.dir/RayTracer.o" \
-"CMakeFiles/graphics.dir/CoordinateSys.o"
+"CMakeFiles/graphics.dir/CoordinateSys.o" \
+"CMakeFiles/graphics.dir/Circle.o" \
+"CMakeFiles/graphics.dir/Scene_jsonParser.o" \
+"CMakeFiles/graphics.dir/LambertianShader.o"
 
 # External object files for target graphics
 graphics_EXTERNAL_OBJECTS =
@@ -245,9 +320,12 @@ libgraphics.a: CMakeFiles/graphics.dir/Rasterizer.o
 libgraphics.a: CMakeFiles/graphics.dir/PerspectiveCamera.o
 libgraphics.a: CMakeFiles/graphics.dir/RayTracer.o
 libgraphics.a: CMakeFiles/graphics.dir/CoordinateSys.o
+libgraphics.a: CMakeFiles/graphics.dir/Circle.o
+libgraphics.a: CMakeFiles/graphics.dir/Scene_jsonParser.o
+libgraphics.a: CMakeFiles/graphics.dir/LambertianShader.o
 libgraphics.a: CMakeFiles/graphics.dir/build.make
 libgraphics.a: CMakeFiles/graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libgraphics.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libgraphics.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/graphics.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)
 
@@ -263,6 +341,9 @@ CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/Rasterizer.o.requires
 CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/PerspectiveCamera.o.requires
 CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/RayTracer.o.requires
 CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/CoordinateSys.o.requires
+CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/Circle.o.requires
+CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/Scene_jsonParser.o.requires
+CMakeFiles/graphics.dir/requires: CMakeFiles/graphics.dir/LambertianShader.o.requires
 
 .PHONY : CMakeFiles/graphics.dir/requires
 

@@ -6,6 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphics.dir/PerspectiveCamera.o"
   "CMakeFiles/graphics.dir/RayTracer.o"
   "CMakeFiles/graphics.dir/CoordinateSys.o"
+  "CMakeFiles/graphics.dir/Circle.o"
+  "CMakeFiles/graphics.dir/Scene_jsonParser.o"
+  "CMakeFiles/graphics.dir/LambertianShader.o"
   "libgraphics.pdb"
   "libgraphics.a"
 )

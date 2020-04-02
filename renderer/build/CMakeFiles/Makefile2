@@ -60,87 +60,13 @@ CMAKE_SOURCE_DIR = /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode
 CMAKE_BINARY_DIR = /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/graphics.dir
-
-# All Build rule for target.
-CMakeFiles/graphics.dir/all:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/depend
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target graphics"
-.PHONY : CMakeFiles/graphics.dir/all
-
-# Include target in all.
-all: CMakeFiles/graphics.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/graphics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/graphics.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles 0
-.PHONY : CMakeFiles/graphics.dir/rule
-
-# Convenience name for target.
-graphics: CMakeFiles/graphics.dir/rule
-
-.PHONY : graphics
-
-# clean rule for target.
-CMakeFiles/graphics.dir/clean:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/clean
-.PHONY : CMakeFiles/graphics.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/graphics.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_FrameBuffer.dir
-
-# All Build rule for target.
-CMakeFiles/test_FrameBuffer.dir/all: CMakeFiles/graphics.dir/all
-	$(MAKE) -f CMakeFiles/test_FrameBuffer.dir/build.make CMakeFiles/test_FrameBuffer.dir/depend
-	$(MAKE) -f CMakeFiles/test_FrameBuffer.dir/build.make CMakeFiles/test_FrameBuffer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=9,10 "Built target test_FrameBuffer"
-.PHONY : CMakeFiles/test_FrameBuffer.dir/all
-
-# Include target in all.
-all: CMakeFiles/test_FrameBuffer.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_FrameBuffer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_FrameBuffer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_FrameBuffer.dir/rule
-
-# Convenience name for target.
-test_FrameBuffer: CMakeFiles/test_FrameBuffer.dir/rule
-
-.PHONY : test_FrameBuffer
-
-# clean rule for target.
-CMakeFiles/test_FrameBuffer.dir/clean:
-	$(MAKE) -f CMakeFiles/test_FrameBuffer.dir/build.make CMakeFiles/test_FrameBuffer.dir/clean
-.PHONY : CMakeFiles/test_FrameBuffer.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/test_FrameBuffer.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/test_RayTracer.dir
 
 # All Build rule for target.
 CMakeFiles/test_RayTracer.dir/all: CMakeFiles/graphics.dir/all
 	$(MAKE) -f CMakeFiles/test_RayTracer.dir/build.make CMakeFiles/test_RayTracer.dir/depend
 	$(MAKE) -f CMakeFiles/test_RayTracer.dir/build.make CMakeFiles/test_RayTracer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=11,12 "Built target test_RayTracer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=12,13 "Built target test_RayTracer"
 .PHONY : CMakeFiles/test_RayTracer.dir/all
 
 # Include target in all.
@@ -150,7 +76,7 @@ all: CMakeFiles/test_RayTracer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_RayTracer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_RayTracer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_RayTracer.dir/rule
@@ -167,6 +93,43 @@ CMakeFiles/test_RayTracer.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/test_RayTracer.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/graphics.dir
+
+# All Build rule for target.
+CMakeFiles/graphics.dir/all:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/depend
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target graphics"
+.PHONY : CMakeFiles/graphics.dir/all
+
+# Include target in all.
+all: CMakeFiles/graphics.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graphics.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/graphics.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/build/CMakeFiles 0
+.PHONY : CMakeFiles/graphics.dir/rule
+
+# Convenience name for target.
+graphics: CMakeFiles/graphics.dir/rule
+
+.PHONY : graphics
+
+# clean rule for target.
+CMakeFiles/graphics.dir/clean:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/clean
+.PHONY : CMakeFiles/graphics.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/graphics.dir/clean
 
 .PHONY : clean
 
