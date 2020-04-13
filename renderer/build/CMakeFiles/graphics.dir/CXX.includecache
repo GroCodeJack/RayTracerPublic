@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.cpp
+BlinnPhongShader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.h
+
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.h
 iostream
 -
@@ -20,6 +24,12 @@ Shader.h
 vector
 -
 cstdlib
+-
+HitStructure.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
+SceneContainer.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/SceneContainer.h
+cmath
 -
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Camera.h
@@ -231,38 +241,6 @@ nlohmann/json.hpp
 -
 HitStructure.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
-
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Scene_jsonParser.cpp
-glm/gtx/string_cast.hpp
--
-iostream
--
-fstream
--
-Vector3D.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
-SceneContainer.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/SceneContainer.h
-PerspectiveCamera.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/PerspectiveCamera.h
-Shape.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shape.h
-Circle.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.h
-Triangle.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
-stack
--
-BlinnPhongShader.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.h
-LambertianShader.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.h
-Light.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Light.h
-Shader.h
-/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
-nlohmann/json.hpp
--
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
 iostream

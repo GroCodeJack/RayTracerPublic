@@ -3,7 +3,7 @@
 //#include "PerspectiveCamera.h"
 //#include "Camera.h"
 #include "Vector3D.h"
-
+class HitStructure;
 class Ray{
  public:
 

@@ -137,6 +137,21 @@ graphics/fast:
 .PHONY : graphics/fast
 
 # target to build an object file
+BlinnPhongShader.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/BlinnPhongShader.o
+.PHONY : BlinnPhongShader.o
+
+# target to preprocess a source file
+BlinnPhongShader.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/BlinnPhongShader.i
+.PHONY : BlinnPhongShader.i
+
+# target to generate assembly for a file
+BlinnPhongShader.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/BlinnPhongShader.s
+.PHONY : BlinnPhongShader.s
+
+# target to build an object file
 Circle.o:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Circle.o
 .PHONY : Circle.o
@@ -242,21 +257,6 @@ RayTracer.s:
 .PHONY : RayTracer.s
 
 # target to build an object file
-Scene_jsonParser.o:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Scene_jsonParser.o
-.PHONY : Scene_jsonParser.o
-
-# target to preprocess a source file
-Scene_jsonParser.i:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Scene_jsonParser.i
-.PHONY : Scene_jsonParser.i
-
-# target to generate assembly for a file
-Scene_jsonParser.s:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Scene_jsonParser.s
-.PHONY : Scene_jsonParser.s
-
-# target to build an object file
 Triangle.o:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Triangle.o
 .PHONY : Triangle.o
@@ -311,6 +311,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_RayTracer"
 	@echo "... graphics"
+	@echo "... BlinnPhongShader.o"
+	@echo "... BlinnPhongShader.i"
+	@echo "... BlinnPhongShader.s"
 	@echo "... Circle.o"
 	@echo "... Circle.i"
 	@echo "... Circle.s"
@@ -332,9 +335,6 @@ help:
 	@echo "... RayTracer.o"
 	@echo "... RayTracer.i"
 	@echo "... RayTracer.s"
-	@echo "... Scene_jsonParser.o"
-	@echo "... Scene_jsonParser.i"
-	@echo "... Scene_jsonParser.s"
 	@echo "... Triangle.o"
 	@echo "... Triangle.i"
 	@echo "... Triangle.s"

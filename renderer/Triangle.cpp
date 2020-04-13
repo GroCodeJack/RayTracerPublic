@@ -54,7 +54,7 @@ Vector3D Triangle::getColor(){
   return m_color;
 }
 
-bool Triangle::closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h) const {
+bool Triangle::closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h) {
  
   float a = vertices[0][0] - vertices[1][0];
   float d = vertices[0][0] - vertices[2][0];

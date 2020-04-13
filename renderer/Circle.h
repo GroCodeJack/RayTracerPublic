@@ -18,7 +18,7 @@ class Circle : public Shape {
   Vector3D getColor();
   void setColor(float x, float y, float z);
  
-  bool closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h) const;
+  bool closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h);
 
  private:
   Vector3D m_center;

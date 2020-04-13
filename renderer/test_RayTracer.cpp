@@ -42,6 +42,9 @@ int main(int argc, char *argv[])
   
   
   sc.addCamera(cam);
+
+  //Shape *t = new Triangle(Vector3D(1.5, 1.0, -3.0), Vector3D(4.5, 1.0, -3.0), Vector3D(4.5, 3.0, -3.0), Vector3D(1.0, 0.0, 0.0));
+  //sc.addShape(t);
     /*;
 
   Shape *c = new Circle(1.0, 1.0, 3.0, 0.5, Vector3D(1.0, 0.0, 0.0));

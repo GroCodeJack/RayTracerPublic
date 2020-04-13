@@ -13,6 +13,7 @@
 #include "LambertianShader.h"
 #include "Light.h"
 #include "Shader.h"
+#include "Box.h"
 
 //#include "Constants.h"
 
@@ -140,16 +141,18 @@ Shape *SceneContainer::extractAndCreateShapeFromJSONData( json &shapeData )
     
     std::cout << "Created Triangle!" << std::endl;
   }
-  /*
+  
   else if (type == "box") {
     Vector3D minPt, maxPt;
 
     minPt = shapeData["minPt"];
     maxPt = shapeData["maxPt"];
+    std::string shaderName = shapeData["shader"]["_ref"];
 
     sPtr = new Box(minPt, maxPt);
+    sPtr->setShader(locateShader(shaderName));
   }
-  
+  /*
   else if (type == "mesh") {
     std::string mesh_filename = shapeData["file"];
     std::string meshFile_fullPath(getFilePath() + "/" + mesh_filename);
@@ -282,22 +285,23 @@ void SceneContainer::parseJSONData(const std::string &filename)
       //else if (shaderType == "LambertianPT")
       //shaderPtr = new LambertianPT(kd);
     }
-    /*
-    else if (shaderType == "BlinnPhong" || shaderType == "Phong") {
+    
+    else if (shaderType == "BlinnPhong" /*|| shaderType == "Phong"*/) {
 
       float phongExp;
-      Vector3D diffuse, specular;
+      Vector3D diffuse, spec;
       diffuse = shaderInfo["diffuse"];
-      specular = shaderInfo["specular"];
+      spec = shaderInfo["specular"];
       phongExp = shaderInfo["phongExp"];
 
-      ShaderCoefficient kd(diffuse, 0);
-      ShaderCoefficient ks(specular, 0);
+      //ShaderCoefficient kd(diffuse, 0);
+      //ShaderCoefficient ks(specular, 0);
       if (shaderType == "BlinnPhong")
-	shaderPtr = new BlinnPhong(kd, ks, phongExp);
-      else
-	shaderPtr = new Phong(diffuse, specular, phongExp);
+	shaderPtr = new BlinnPhongShader(diffuse, spec, phongExp);
+      //else
+      //	shaderPtr = new Phong(diffuse, specular, phongExp);
     }
+    /*
     else if (shaderType == "Mirror") {
       shaderPtr = new Mirror();
     }

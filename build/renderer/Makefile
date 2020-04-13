@@ -195,6 +195,60 @@ test_RayTracer/fast:
 	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/test_RayTracer.dir/build.make renderer/CMakeFiles/test_RayTracer.dir/build
 .PHONY : test_RayTracer/fast
 
+BlinnPhongShader.o: BlinnPhongShader.cpp.o
+
+.PHONY : BlinnPhongShader.o
+
+# target to build an object file
+BlinnPhongShader.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/BlinnPhongShader.cpp.o
+.PHONY : BlinnPhongShader.cpp.o
+
+BlinnPhongShader.i: BlinnPhongShader.cpp.i
+
+.PHONY : BlinnPhongShader.i
+
+# target to preprocess a source file
+BlinnPhongShader.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/BlinnPhongShader.cpp.i
+.PHONY : BlinnPhongShader.cpp.i
+
+BlinnPhongShader.s: BlinnPhongShader.cpp.s
+
+.PHONY : BlinnPhongShader.s
+
+# target to generate assembly for a file
+BlinnPhongShader.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/BlinnPhongShader.cpp.s
+.PHONY : BlinnPhongShader.cpp.s
+
+Box.o: Box.cpp.o
+
+.PHONY : Box.o
+
+# target to build an object file
+Box.cpp.o:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Box.cpp.o
+.PHONY : Box.cpp.o
+
+Box.i: Box.cpp.i
+
+.PHONY : Box.i
+
+# target to preprocess a source file
+Box.cpp.i:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Box.cpp.i
+.PHONY : Box.cpp.i
+
+Box.s: Box.cpp.s
+
+.PHONY : Box.s
+
+# target to generate assembly for a file
+Box.cpp.s:
+	cd /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build && $(MAKE) -f renderer/CMakeFiles/graphics.dir/build.make renderer/CMakeFiles/graphics.dir/Box.cpp.s
+.PHONY : Box.cpp.s
+
 Circle.o: Circle.cpp.o
 
 .PHONY : Circle.o
@@ -507,6 +561,12 @@ help:
 	@echo "... test_RayTracer"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... BlinnPhongShader.o"
+	@echo "... BlinnPhongShader.i"
+	@echo "... BlinnPhongShader.s"
+	@echo "... Box.o"
+	@echo "... Box.i"
+	@echo "... Box.s"
 	@echo "... Circle.o"
 	@echo "... Circle.i"
 	@echo "... Circle.s"

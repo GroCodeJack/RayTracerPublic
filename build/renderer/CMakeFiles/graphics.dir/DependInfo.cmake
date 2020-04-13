@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.cpp" "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer/CMakeFiles/graphics.dir/BlinnPhongShader.cpp.o"
+  "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Box.cpp" "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer/CMakeFiles/graphics.dir/Box.cpp.o"
   "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Circle.cpp" "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer/CMakeFiles/graphics.dir/Circle.cpp.o"
   "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/CoordinateSys.cpp" "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer/CMakeFiles/graphics.dir/CoordinateSys.cpp.o"
   "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.cpp" "/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/build/renderer/CMakeFiles/graphics.dir/FrameBuffer.cpp.o"

@@ -11,7 +11,7 @@
 class Shape {
  public:
   //Shape();
-  virtual bool closestHit(const Ray &r, float tmin, float &tmax, HitStructure& h) const = 0;
+  virtual bool closestHit(const Ray &r, float tmin, float &tmax, HitStructure& h) = 0;
   Vector3D getColor(){ return m_color; }
   void setName(std::string name){ m_name = name; }
   void setColor(float x, float y, float z){

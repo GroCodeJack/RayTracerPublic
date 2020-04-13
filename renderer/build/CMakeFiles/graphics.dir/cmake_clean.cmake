@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphics.dir/RayTracer.o"
   "CMakeFiles/graphics.dir/CoordinateSys.o"
   "CMakeFiles/graphics.dir/Circle.o"
-  "CMakeFiles/graphics.dir/Scene_jsonParser.o"
   "CMakeFiles/graphics.dir/LambertianShader.o"
+  "CMakeFiles/graphics.dir/BlinnPhongShader.o"
   "libgraphics.pdb"
   "libgraphics.a"
 )

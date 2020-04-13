@@ -2332,6 +2332,10 @@ cassert
 io_base.hpp
 ../src/png++/io_base.hpp
 
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.cpp
+BlinnPhongShader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.h
+
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/BlinnPhongShader.h
 iostream
 -
@@ -2347,6 +2351,34 @@ vector
 -
 cstdlib
 -
+HitStructure.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
+SceneContainer.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/SceneContainer.h
+cmath
+-
+
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Box.cpp
+Box.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Box.h
+
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Box.h
+Shape.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shape.h
+Vector3D.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
+FrameBuffer.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/FrameBuffer.h
+Ray.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Ray.h
+HitStructure.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/HitStructure.h
+Triangle.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Triangle.h
+vector
+-
+Shader.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Camera.h
 iostream
@@ -2423,6 +2455,8 @@ Shader.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
 limits
 -
+Vector3D.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.cpp
 LambertianShader.h
@@ -2587,6 +2621,8 @@ Light.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Light.h
 Shader.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
+Box.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Box.h
 nlohmann/json.hpp
 -
 

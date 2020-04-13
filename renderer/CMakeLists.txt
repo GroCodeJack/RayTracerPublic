@@ -36,10 +36,12 @@ add_library(graphics
   Shader.h
   LambertianShader.h
   LambertianShader.cpp
-  #BlinnPhongShader.h
+  BlinnPhongShader.h
   HitStructure.h
   Light.h
-  #LambertianShader.cpp
+  BlinnPhongShader.cpp
+  Box.h
+  Box.cpp
   
   )
 

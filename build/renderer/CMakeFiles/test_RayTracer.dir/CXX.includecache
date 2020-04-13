@@ -2407,6 +2407,8 @@ Shader.h
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Shader.h
 limits
 -
+Vector3D.h
+/home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/Vector3D.h
 
 /home/csugrads/groth252/summercode/graphics/ghcLab1pt2/myCode/sample/renderer/LambertianShader.h
 iostream

@@ -34,7 +34,7 @@ Vector3D Circle::getColor(){
 }
 
 
-bool Circle::closestHit(const Ray &r, float tmin, float &tmax, HitStructure& h) const{
+bool Circle::closestHit(const Ray &r, float tmin, float &tmax, HitStructure& h){
 
   Vector3D d = r.getDirection();
   Vector3D e = r.getOrigin();

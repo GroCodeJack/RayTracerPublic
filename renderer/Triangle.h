@@ -16,7 +16,7 @@ class Triangle : public Shape {
   Vector3D &operator[](const int idx);
   void setColor(float x, float y, float z);
   Vector3D getColor();
-  bool closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h) const;
+  bool closestHit(const Ray &r, float tmin, float &tmax, HitStructure &h);
   void setShader(Shader *s){ shader = s; }
   
 
